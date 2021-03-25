@@ -138,8 +138,8 @@
                     @endforelse
                 </div>
                 <br><div class="text-center mt-4">
-                    <a href="{{ route('categories') }}" class="btn btn-outline-info">Lihat Semua Video Sholawat</a>
-                </div></br>
+                    <a href="{{ route('categories') }}" class="btn btn-outline-danger">Lihat Semua Video Sholawat</a>
+                </div> <br>
 
         </div>
       </section>
@@ -208,7 +208,7 @@
               <ol>
                 <li class="list-judul">
                   <h5 class="sub-judul">
-                    Pastikan anda sudah berada didalam website www.video.lapakanik.co.id. Kemudian klik tombol <b>Upload Gratis</b> dipojok kanan atas. 
+                    Pastikan anda sudah berada didalam website www.video.lapakanik.co.id. Kemudian klik tombol <b>Upload Gratis</b> dipojok kanan atas.
                   </h5>
                 </li>
                 <li class="list-judul">
