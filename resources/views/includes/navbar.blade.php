@@ -6,7 +6,7 @@
     <a href="{{ route('home') }}" class="navbar-brand">
         <img src="/images/logo-nav-new.png" alt="Logo" / style="width: 150px;">
     </a>
-    
+
     <span
         class="navbar-toggler"
         type="button"
@@ -35,14 +35,14 @@
             <li class="nav-item">
                 <a href="{{ route('panduan') }}" class="nav-link {{ (request()->is('panduan')) ? 'active' : '' }}">Panduan</a>
             </li>
-            
+
             <li class="divider"></li>
 
             @guest
                 <!--<li class="nav-item">-->
                 <!--    <a href="{{ route('login') }}" class="btn warning btn-member nav-link px-4"><i class="fas fa-cloud-upload-alt"></i> Upload Gratis</a>-->
                 <!--</li>-->
-                
+
                 <div class="btn-group">
                   <button type="button" class="btn warning btn-member nav-link px-4 dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     <i class="fas fa-cloud-upload-alt"></i> Upload Gratis
@@ -58,7 +58,7 @@
         @auth
           <!-- Desktop Menu -->
          <ul class="navbar-nav d-none d-lg-flex mb-2">
-            
+
             <li class="nav-item dropdown">
               <a
                 href="#"
@@ -67,12 +67,12 @@
                 role="button"
                 data-toggle="dropdown"
               >
-              
-                <img
+
+                {{-- <img
                   src="/images/icon-user.png"
                   alt=""
                   class="rounded-circle mr-2 profile-picture"
-                />
+                /> --}}
                 HI, {{ Auth::user()->name }}
               </a>
               <div class="dropdown-menu">
@@ -81,11 +81,11 @@
                   @else
                   <a href="{{ route('dashboard') }}" class="dropdown-item">Dashboard</a>
                   @endif
-                
-                
+
+
               <div class="dropdown-divider"></div>
-                <a href="{{ route('logout') }}" 
-                    onclick="event.preventDefault(); document.getElementById('logout-form').submit();" 
+                <a href="{{ route('logout') }}"
+                    onclick="event.preventDefault(); document.getElementById('logout-form').submit();"
                     class="dropdown-item">
                     Logout
                 </a>
@@ -102,11 +102,11 @@
           <!-- Mobile Menu -->
           <ul class="navbar-nav d-block d-lg-none">
             <li class="nav-item nav-item dropdown">
-                <img
+                {{-- <img
                   src="/images/icon-user.png"
                   alt=""
                   class="rounded-circle mr-2 profile-picture"
-                />
+                /> --}}
                  @if ( Auth::user()->id != 1)
                   <a href="{{ route('member-dashboard') }}" class="nav-link">Hi, {{ Auth::user()->name }}</a>
                   @else

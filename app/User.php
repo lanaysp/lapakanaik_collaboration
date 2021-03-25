@@ -7,11 +7,12 @@ use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use App\Models\Province;
 use App\Models\Regency;
+use Laravelista\Comments\Commenter;
 use App\Notifications\CustomVerifyEmailNotification;
 use App\Notifications\CustomResetPasswordNotification;
 class User extends Authenticatable implements MustVerifyEmail
 {
-    use Notifiable;
+    use Notifiable, Commenter;
 
     /**
      * The attributes that are mass assignable.
@@ -61,7 +62,7 @@ class User extends Authenticatable implements MustVerifyEmail
     public function product(){
         return $this->hasOne(Product::class, 'id', 'products_id');
     }
-    
+
      public function sendEmailVerificationNotification()
 
     {

@@ -160,7 +160,7 @@ textarea::-webkit-input-placeholder {
                   <div class="col-md-4">
                     <div class="form-group">
                       <label for="regencies_id">Kota</label>
-                      <select name="regencies_id" id="regencies_id" class="form-control" v-if="regencies" v-model="regencies_id">
+                      <select name="regencies_id" id="regencies_id" class="form-control" v-if="regencies" v-model="regencies_id" required>
                         <option v-for="regency in regencies" :value="regency.id"placeholder="Contoh : ">@{{ regency.name }}</option>
                       </select>
                       <select v-else class="form-control"></select>
@@ -263,9 +263,9 @@ textarea::-webkit-input-placeholder {
                     </div>
                   </div>
                 </div>
-                
-                
-                     
+
+
+
 
                 <div class="row">
                   <div class="col text-right">

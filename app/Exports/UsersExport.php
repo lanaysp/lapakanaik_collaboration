@@ -9,6 +9,6 @@ class UsersExport implements FromCollection
 {
     public function collection()
     {
-        return User::get(['name', 'email' , 'wa_majelis']);
+        return  User::where('email_verified_at','!=', null)->get(['name', 'email_majelis', 'wa_majelis']) ;
     }
 }

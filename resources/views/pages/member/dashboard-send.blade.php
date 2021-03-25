@@ -31,9 +31,44 @@
         Page Kirim Video Member Lapakanik Colaboration
       </p>
     </div>
+    @if(Auth::check() && !Auth::user()->email_verified_at)
+        <div class="row mt-3">
+            <div class="col-md-12">
+            <div class="card">
+                <a href="{{ route('home') }}">
+                <div class="card-body">
+                    <p class="toko text-danger" ><i class="fas fa-exclamation"></i> <small> Hei {{ Auth::user()->name }}, Silahkan verifikasi email anda untuk menikmati fiktur ini.</small></p>
+                </div>
+                </a>
+            </div>
+            </div>
+        </div>
+    @elseif (Auth::check() && !Auth::user()->nama_majelis)
+    <div class="row mt-3">
+            <div class="col-md-12">
+            <div class="card">
+                <a href="{{ route('profile.index') }}">
+                <div class="card-body">
+                    <p class="toko text-danger" ><i class="fas fa-exclamation"></i> <small> Hei {{ Auth::user()->name }}, Silahkan atur profil kamu sebelum upload video , agar video yang kamu upload bisa kami proses. </small></p>
+                </div>
+                </a>
+            </div>
+            </div>
+        </div>
+    @else
+
     <div class="dashboard-content justify-content-center">
       <div class="row">
         <div class="col-12">
+             @if ($errors->any())
+                <div class="alert alert-danger">
+                    <ul>
+                        @foreach ($errors->all() as $error)
+                            <li>{{ $error }}</li>
+                        @endforeach
+                    </ul>
+                </div>
+            @endif
             <div class="card w-100">
                 <div class="card-body">
                     <h5 class="card-title">Cara Upload Video !</h5>
@@ -70,6 +105,7 @@
         </div>
       </div>
     </div>
+    @endif
   </div>
 </div>
 @endsection

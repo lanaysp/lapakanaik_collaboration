@@ -23,18 +23,6 @@
               </p>
             </div>
             <div class="dashboard-content">
-
-              <div class="row mt-3">
-                  <div class="col-md-12">
-                    <div class="card">
-                      <a href="{{ route('profile.index') }}">
-                      <div class="card-body">
-                        <p class="toko text-danger"><i class="fas fa-exclamation"></i> <small> Hei {{ Auth::user()->name }}, Silahkan atur profil kamu sebelum upload video , agar video yang kamu upload bisa kami proses. (Abaikan jika sudah di isi) </small></p>
-                      </div>
-                      </a>
-                    </div>
-                  </div>
-                </div>
                 <div class="row">
                     <div class="container text-center mt-4">
                         <div class="col-lg-12">

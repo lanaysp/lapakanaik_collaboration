@@ -19,7 +19,8 @@ class DetailController extends Controller
      */
     public function index(Request $request, $id)
     {
-        $categories     = Category::all();
+
+         $categories     = Category::all();
          $product = Product::with(['galleries','user.provinsi','user.kota'])->where('slug', $id)->firstOrFail();
          $lainya = Product::with(['galleries'])->take(2)->get();
          $random = Product::with(['galleries'])->inRandomOrder()->take(5)->get();
@@ -32,7 +33,7 @@ class DetailController extends Controller
             'product' => $product,
             'medsos' => $sosials,
             'lainya' => $lainya,
-            'more' => $more
+            'more' => $more,
         ]);
     }
 

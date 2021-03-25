@@ -30,7 +30,7 @@ class UserController extends Controller
 
             return Datatables::of($query)
             ->addColumn('status', function ($item) {
-                  if($item->provinces_id == null ){
+                  if($item->regencies_id == null ){
                       return ' <span class="badge badge-danger"> No Completed </span> ';
                   }else{
                       return ' <span class="badge badge-primary"> Completed </span> ';

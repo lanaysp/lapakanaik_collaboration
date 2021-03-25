@@ -140,11 +140,11 @@
   </div>
 </nav>
 <div class="tab-content" id="nav-tabContent">
-  
+
   <div class="tab-pane fade show active" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
       <div class="row">
           <div class="col-9">
-            {!! $product->description !!}  
+            {!! $product->description !!}
           </div>
           <div class="col-lg-3">
       <div class="col-lg-12">
@@ -186,25 +186,12 @@
   </div>
   <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
       <div class="row">
-  <div class="col-12 col-lg-9 mt-3">
-        <div class="col-lg-9 col-12">
-            <form>
-            <div class="form-group">
-                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Nama">
+    <div class="col-12 col-lg-9 mt-3">
+            <div class="col-lg-9 col-12">
+                @comments(['model' => $product])
             </div>
-            <div class="form-group">
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Email">
-            </div>
-            <div class="form-group">
-                <textarea name="" id="" class="form-control" cols="20" rows="10" placeholder="Enter Komentar"></textarea>
-            </div>
-
-        <button type="submit" class="btn btn-dark btn-member col-12">Kirim Komentar</button>
-    </form>
-</div>
-<hr>
-
-  </div>
+        <hr>
+    </div>
   <div class="col-lg-3 col-12">
       <div class="col-lg-10 offsite-1">
                    <div class="card mt-3" style="width: 18rem;">
@@ -241,7 +228,7 @@
                     </div>
                 </div>
   </div>
-  
+
 </div>
   </div>
 </div>
