@@ -138,7 +138,7 @@
                     @endforelse
                 </div>
                 <br><div class="text-center mt-4">
-                    <a href="{{ route('categories') }}" class="btn btn-outline-danger">Lihat Semua Video Sholawat</a>
+                    <a href="{{ route('categories') }}" class="btn btn-outline-info">Lihat Semua Video Sholawat</a>
                 </div> <br>
 
         </div>
