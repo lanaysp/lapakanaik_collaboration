@@ -1,0 +1,33 @@
+.component-categories {
+  background: transparent;
+  border: unset !important;
+  // border-radius: 8px;
+  padding: 4px 4px 2px 4px;
+  // margin-bottom: 20px;
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    transform: scale(1.05);
+    text-decoration: none;
+  }
+}
+
+.categories-image {
+  max-width: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.categories-text {
+  color: #0c0d36;
+  font-size: 10px;
+  text-align: center;
+  font-weight: normal;
+  margin-top: 10px;
+}
+
+h5 {
+  color: #0c0d36;
+  font-size: 25px;
+  margin-top: 10px;
+}

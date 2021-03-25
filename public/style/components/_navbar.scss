@@ -1,0 +1,16 @@
+.navbar-light .navbar-nav .nav-link {
+    color: rgb(58, 58, 58);
+    font-weight: 400;
+    &:hover,:focus {
+   color:#007691;
+  }
+}
+
+.navbar-light .navbar-nav .show > .navbar-link,
+.navbar-light .navbar-nav .active > .nav-link,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .nav-link.active {
+    color:#007691;
+    font-weight: 400;
+}
+

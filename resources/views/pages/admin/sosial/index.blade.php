@@ -1,0 +1,91 @@
+@extends('layouts.dashboard')
+
+@section('title')
+    Dashboard Admin Sosial Media
+@endsection
+
+@section('content')
+<div class="section-content section-dashboard-home" data-aos="fade-up">
+            <div class="container-fluid">
+              <div class="dashboard-heading">
+                <h2 class="dashboard-title">Sosial Media</h2>
+                <p class="dashboard-subtitle">
+                  List of Sosial Media
+                </p>
+              </div>
+              <div class="dashboard-content">
+                <div class="row">
+                    <div class="col-md-12">
+
+                        @if(session()->has('success'))
+                            <div class="alert alert-success">
+                                {{ session()->get('success') }}
+                            </div>
+                        @endif
+                        @if(session()->has('error'))
+                            <div class="alert alert-danger">
+                                {{ session()->get('error') }}
+                            </div>
+                        @endif
+
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="table-responsive">
+                                    <table class="table table-hover scroll-horizontal-vertical w-100" id="crudTable">
+                                        <thead>
+                                        <tr>
+                                            <th>ID</th>
+                                            <th>Cs</th>
+                                            <th>Email</th>
+                                            <th>Instagram</th>
+                                            <th>Youtube</th>
+                                            <th>Twitter</th>
+                                            <th>Tiktok</th>
+                                            <th>Alamat</th>
+                                            <th>Telepon</th>
+                                            <th>Aksi</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody></tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+@endsection
+
+@push('addon-script')
+    <script>
+        // AJAX DataTable
+        var datatable = $('#crudTable').DataTable({
+            processing: true,
+            serverSide: true,
+            ordering: true,
+            ajax: {
+                url: '{!! url()->current() !!}',
+            },
+            columns: [
+                { data: 'id', name: 'id' },
+                { data: 'cs', name: 'cs' },
+                { data: 'email', name: 'email' },
+                { data: 'ig', name: 'ig' },
+                { data: 'yt', name: 'yt' },
+                { data: 'tw', name: 'tw' },
+                { data: 'tt', name: 'tt' },
+                { data: 'alamat', name: 'alamat'},
+                { data: 'hp', name: 'hp' },
+                {
+                    data: 'action',
+                    name: 'action',
+                    orderable: false,
+                    searchable: false,
+                    width: '15%'
+                },
+            ]
+        });
+    </script>
+@endpush

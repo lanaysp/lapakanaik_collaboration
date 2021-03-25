@@ -1,0 +1,63 @@
+.page-auth {
+  .row-login {
+    min-height: 70vh;
+  }
+
+  .section-store-auth {
+    h2 {
+      font-weight: bold;
+      font-size: 25px;
+      color: #0c0d36;
+    }
+
+    .form-control {
+      border-radius: 8px;
+      background: #f3f3f3;
+    }
+
+    .btn-signup {
+      @include button-variant(#f3f3f3, transparent);
+      color: #bbbbbb;
+    }
+    a {
+      color: #007691;
+    }
+    .btn-register {
+    color: #fff;
+    background-color:#007691;
+    border-radius: 50px;
+    padding: 10px 20px 10px 20px;
+    font-size: 14px;
+    box-shadow: 2px 4px 8px 0px rgba(46, 61, 73, 0.2);
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+     &:hover {
+    background-color: #032c07;
+    box-shadow: 12px 15px 20px 0px rgba(46, 61, 73, 0.15);
+  }
+}
+    .btn-login {
+    color: #fff;
+    background-color: #007691;
+    border-radius: 50px;
+    padding: 10px 20px 10px 20px;
+    font-size: 14px;
+    box-shadow: 2px 4px 8px 0px rgba(46, 61, 73, 0.2);
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+     &:hover {
+    background-color: #043108;
+    box-shadow: 12px 15px 20px 0px rgba(46, 61, 73, 0.15);
+  }
+}
+.tbl-signup {
+    color: #0c0d36;
+    background-color: transparent;
+    text-align: center;
+    display:block;
+    text-decoration: none;
+    &:hover {
+        color:#007691;
+        background-color: transparent;
+    }
+}
+  }
+}
