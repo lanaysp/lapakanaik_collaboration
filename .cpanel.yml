@@ -1,6 +1,6 @@
 ---
 deployment:
-  taks:
+  tasks:
     - export DEPLOYPATH=/home/lapakan3/video.lapakanik.co.id
     - /bin/cp -R app $DEPLOYPATH
     - /bin/cp -R resources $DEPLOYPATH
