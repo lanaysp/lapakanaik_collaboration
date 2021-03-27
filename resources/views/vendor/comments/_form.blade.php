@@ -38,7 +38,7 @@
                 </div>
             @endif
 
-            <div class="form-group">
+            <div class="form-group col-12">
                 <label for="message">Masukkan komentar Anda di sini:</label>
                 <textarea class="form-control @if($errors->has('message')) is-invalid @endif" name="message" rows="3"></textarea>
                 <div class="invalid-feedback">

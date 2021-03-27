@@ -141,12 +141,12 @@
 
   <div class="tab-pane fade show active" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
       <div class="row">
-          <div class="col-9 mt-3">
+          <div class="col-lg-9 col-12 mt-3">
             {!! $product->description !!}
             <hr>
             @comments([
                 'model' => $product,
-                'perPage' => 2
+                'perPage' => 5
             ])
           </div>
           <div class="col-lg-3">
