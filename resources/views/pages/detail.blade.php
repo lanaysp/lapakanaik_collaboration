@@ -135,16 +135,19 @@
                     <div class="col-lg-12">
                         <nav>
   <div class="nav nav-tabs" id="nav-tab" role="tablist">
-      <a class="nav-link detail active" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Komentar</a>
-      <a class="nav-link detail" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Deskripsi</a>
   </div>
 </nav>
 <div class="tab-content" id="nav-tabContent">
 
-  <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+  <div class="tab-pane fade show active" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
       <div class="row">
           <div class="col-9 mt-3">
             {!! $product->description !!}
+            <hr>
+            @comments([
+                'model' => $product,
+                'perPage' => 2
+            ])
           </div>
           <div class="col-lg-3">
       <div class="col-lg-12">
@@ -184,16 +187,10 @@
   </div>
       </div>
   </div>
-  <div class="tab-pane fade show active" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+  <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
       <div class="row">
     <div class="col-12 col-lg-9 mt-3">
-            <div class="col-lg-9 col-12">
-                @comments([
-                    'model' => $product,
-                    'maxIndentationLevel' => 1,
-                    // 'perPage' => 3
-                    ])
-            </div>
+
         <hr>
     </div>
   <div class="col-lg-3 col-12">
