@@ -38,7 +38,7 @@ class CategoryController extends Controller
     {
         $category   = Category::where('slug', $slug)->first();
         if(!$category) {
-            
+            // kosong
         }
        $sosials = Sosial::all();
        $categories = Category::all();

@@ -1,7 +1,7 @@
+
 <nav
     class="navbar navbar-expand-lg navbar-store fixed-top navbar-fixed-top"
-    data-aos="fade-down"
->
+    data-aos="fade-down">
     <div class="container">
     <a href="{{ route('home') }}" class="navbar-brand">
         <img src="/images/logo-nav-new.png" alt="Logo" / style="width: 150px;">

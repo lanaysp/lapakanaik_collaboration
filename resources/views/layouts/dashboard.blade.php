@@ -54,6 +54,9 @@
                <a href="{{ route('user.index') }}" class="list-group-item list-group-item-action {{ (request()->is('admin/user*')) ? 'active' : '' }}">
                <i class="fas fa-users"></i> Member
             </a>
+              <a target="_blank" href="{{ route('chatify') }}" class="list-group-item list-group-item-action ">
+               <i class="fas fa-comments"></i> Chat Majelis
+            </a>
             <a href="{{ route('sosial.index') }}" class="list-group-item list-group-item-action {{ (request()->is('admin/sosial*')) ? 'active' : '' }}">
                <i class="far fa-user-circle"></i> Web Information
 

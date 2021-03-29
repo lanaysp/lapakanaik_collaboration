@@ -2,8 +2,17 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/lapakan3/video.lapakanik.co.id
+
+    # folder
     - /bin/cp -R app $DEPLOYPATH
     - /bin/cp -R resources $DEPLOYPATH
     - /bin/cp -R route $DEPLOYPATH
+    - /bin/cp -R public $DEPLOYPATH
+    - /bin/cp -R database $DEPLOYPATH
+    - /bin/cp -R bootrap $DEPLOYPATH
 
-    # - /bin/cp index.html $DEPLOYPATH
+    # file
+
+    - /bin/cp .cpanel.yml $DEPLOYPATH
+    - /bin/cp composer.json $DEPLOYPATH
+    - /bin/cp composer.lock $DEPLOYPATH

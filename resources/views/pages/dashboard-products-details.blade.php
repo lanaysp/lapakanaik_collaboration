@@ -1,7 +1,7 @@
 @extends('layouts.dashboard')
 
 @section('title')
-    Store Dashboard Product Detail | Lapakanik 
+    Dashboard Video Detail | Lapakanik
 @endsection
 @push('addon-style')
 <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.7/css/select2.min.css" rel="stylesheet" />
@@ -235,18 +235,18 @@ img.align-right {
 @push('addon-script')
 <script src="https://cdn.ckeditor.com/4.14.0/standard/ckeditor.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
-  
+
    <script>
    CKEDITOR.replace("summernote");
-   
-   
+
+
        $(document).ready(function() {
     var $tempval    = $.parseJSON('{!! $product->categories()->get()->pluck('categories_id')->toJson() !!}');
     $('.js-example').select2().val($tempval).trigger('change');
 
 });
     </script>
-    
+
     <script>
   var useDarkMode = window.matchMedia('(prefers-color-scheme: white)').matches;
 
@@ -324,7 +324,7 @@ tinymce.init({
  $(document).ready(function() {
      $('#select-state').select2();
  });
- 
+
   </script>
- 
+
 @endpush

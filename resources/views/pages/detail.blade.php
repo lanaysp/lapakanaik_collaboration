@@ -149,59 +149,17 @@
                 'perPage' => 5
             ])
           </div>
-          <div class="col-lg-3">
-      <div class="col-lg-12">
-                   <div class="card mt-3" style="width: 18rem;">
+         <div class="col-12 col-lg-3">
+             <div class="card">
+                 <div class="card-body">
+                      <div class="col-3">
+              <div class="col-lg-12">
+                     <div class="card mt-3" style="width: 18rem;">
                         <form class="form-inline" action="/categories/cari" method="GET">
                             <input class="form-control col-lg-8 col-8 mr-1" name="cari" type="search" placeholder="Search" aria-label="Search">
                             <button class="btn btn-dark btn-member my-1 my-sm-0" type="submit">Search</button>
                         </form>
                     </div>
-
-                </div>
-                <div class="col-lg-12 mt-4">
-                    <div class="list-group" style="width: 18rem;">
-                        <h5 href="#" class="list-group-item list-group-item-action">
-                            Video Terbaru
-                        </h5>
-                         @foreach ($lainya as $item)
-                        <a href="{{ route('detail',$item->slug) }}" class="list-group-item list-group-item-action">{{ $item->name }}</a>
-                        @endforeach
-                    </div>
-                </div>
-                <div class="col-lg-12 mt-4">
-                    <div class="list-group" style="width: 18rem;">
-                        <h5 href="#" class="list-group-item list-group-item-action">
-                            Kategori Video
-                        </h5>
-                          @foreach ($categories as $item)
-                        <a href="{{ route('categories-detail',$item->slug) }}" class="list-group-item list-group-item-action">{{ $item->name }}</a>
-                        @endforeach
-                    </div>
-                </div>
-                <div class="col-lg-12 mt-4">
-                    <div class="list-group" style="width: 18rem;">
-                        <a href="https://my.domainesia.com/ref.php?u=12212" target="_blank"><img src="https://dnva.me/62c54" alt="DomaiNesia"></a>
-                    </div>
-                </div>
-  </div>
-      </div>
-  </div>
-  <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
-      <div class="row">
-    <div class="col-12 col-lg-9 mt-3">
-
-        <hr>
-    </div>
-  <div class="col-lg-3 col-12">
-      <div class="col-lg-10 offsite-1">
-                   <div class="card mt-3" style="width: 18rem;">
-                        <form class="form-inline" action="/categories/cari" method="GET">
-                            <input class="form-control col-lg-8 col-8 mr-1" name="cari" type="search" placeholder="Search" aria-label="Search">
-                            <button class="btn btn-dark btn-member my-1 my-sm-0" type="submit">Search</button>
-                        </form>
-                    </div>
-
                 </div>
                 <div class="col-lg-12 mt-4">
                     <div class="list-group" style="width: 18rem;">
@@ -228,6 +186,21 @@
                         <a href="https://my.domainesia.com/ref.php?u=12212" target="_blank"><img src="https://dnva.me/62c54" alt="DomaiNesia"></a>
                     </div>
                 </div>
+          </div>
+                 </div>
+             </div>
+         </div>
+
+        </div>
+      </div>
+  </div>
+  <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+      <div class="row">
+    <div class="col-12 col-lg-9 mt-3">
+
+        <hr>
+    </div>
+
   </div>
 
 </div>

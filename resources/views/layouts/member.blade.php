@@ -18,7 +18,7 @@
     <link href="/css/fa/css/all.min.css" rel="stylesheet" />
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs4/dt-1.10.22/datatables.min.css"/>
     @stack('addon-style')
-    
+
     <style>
         .nav-link{
             color:#000000 !important;
@@ -49,8 +49,11 @@
             <a href="{{ route('videos.index') }}" class="list-group-item list-group-item-action {{ (request()->is('member/videos')) ? 'active' : '' }}">
                <i class="fas fa-video"></i> Video Saya
             </a>
+            <a href="{{ route('chatify') }}" class="list-group-item list-group-item-action" target="_blank">
+               <i class="fas fa-comments"></i></i> Support
+            </a>
             <a href="{{ route('supports.index') }}" class="list-group-item list-group-item-action {{ (request()->is('member/supports')) ? 'active' : '' }}">
-               <i class="fas fa-headset"></i> Support
+               <i class="fas fa-headset"></i> Kotak Saran
             </a>
 
             <a href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();" class="list-group-item list-group-item-action">
@@ -98,7 +101,7 @@
                       >Ubah Password</a
                     >
                       <div class="dropdown-divider"></div>
-                       
+
                       <a href="{{ route('logout') }}"
                           onclick="event.preventDefault(); document.getElementById('logout-form').submit();"
                           class="dropdown-item">

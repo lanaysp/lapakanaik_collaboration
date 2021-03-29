@@ -1,7 +1,7 @@
 @extends('layouts.dashboard')
 
 @section('title')
-    Store Dashboard Video Detail | Lapakanik
+    Dashboard Video Detail | Lapakanik
 @endsection
 @push('addon-style')
 <link href="https://fonts.googleapis.com/css?family=Aclonica|Ranga" rel="stylesheet"/>

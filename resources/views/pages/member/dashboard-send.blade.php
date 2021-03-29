@@ -34,13 +34,31 @@
     @if(Auth::check() && !Auth::user()->email_verified_at)
         <div class="row mt-3">
             <div class="col-md-12">
-            <div class="card">
-                <a href="{{ route('home') }}">
-                <div class="card-body">
-                    <p class="toko text-danger" ><i class="fas fa-exclamation"></i> <small> Hei {{ Auth::user()->name }}, Silahkan verifikasi email anda untuk menikmati fiktur ini.</small></p>
+                <div class="card">
+                    <a href="{{ route('home') }}">
+                        <div class="card-body">
+                            <p class="toko text-danger" ><i class="fas fa-exclamation"></i> <small> Hei {{ Auth::user()->name }}, Silahkan verifikasi email anda untuk menikmati fiktur ini.</small></p>
+                        </div>
+                    </a>
                 </div>
-                </a>
-            </div>
+                <div class="dashboard-content justfy-content-center">
+                    <div class="card">
+                    <div class="card-body">
+                       <small>
+                            {{ __('If you did not receive the email') }},
+                            <form class="d-inline" method="POST" action="{{ route('verification.resend') }}">
+                                @csrf
+                                <button type="submit" class="btn btn-link btn-sm p-0 m-0 align-baseline">{{ __('click here to request another') }}</button>.
+                            </form>
+                        </small>
+                        </div>
+                    </div>
+                     @if (session('resent'))
+                        <div class="alert alert-success text-center" role="alert">
+                            {{ __('A fresh verification link has been sent to your email address.') }}
+                        </div>
+                    @endif
+                </div>
             </div>
         </div>
     @elseif (Auth::check() && !Auth::user()->nama_majelis)
@@ -49,7 +67,7 @@
             <div class="card">
                 <a href="{{ route('profile.index') }}">
                 <div class="card-body">
-                    <p class="toko text-danger" ><i class="fas fa-exclamation"></i> <small> Hei {{ Auth::user()->name }}, Silahkan atur profil kamu sebelum upload video , agar video yang kamu upload bisa kami proses. </small></p>
+                    <p class="toko text-danger" ><i class="fas fa-exclamation"></i> <small> Hei {{ Auth::user()->name }}, Silahkan atur profil kamu agar bisa upload video. </small></p>
                 </div>
                 </a>
             </div>

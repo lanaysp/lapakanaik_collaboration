@@ -20,7 +20,7 @@ class IsMember
             return $next($request);
         }
 
-        return redirect('/');
+        return redirect('/member');
 
     }
 }

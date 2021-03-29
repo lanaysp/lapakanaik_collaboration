@@ -14,7 +14,7 @@
     <div class="dashboard-heading">
       <h2 class="dashboard-title">Suport</h2>
       <p class="dashboard-subtitle">
-        Suport Dari Lapakanik Colaburation
+        Kotak Saran Lapakanik Colaburation
       </p>
     </div>
     <div class="dashboard-content">
@@ -22,7 +22,7 @@
         <div class="col-12">
         <div class="card">
             <div class="card-header">
-                Silahkan Hubungi Kami Dengan Mengisi Form Di Bawah
+                Jika ada saran untuk Lapakanik Collaboration bisa tulis saran dibawah
             </div>
             <div class="card-body" >
                 <form class="whatsapp-form">

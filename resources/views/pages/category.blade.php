@@ -9,7 +9,7 @@
 @section('content')
     <!-- Page Content -->
     <div class="page-content page-home">
-        
+
       <section class="store-trend-categories">
         <div class="container">
           <div class="row">
@@ -116,8 +116,10 @@
                 </div>
             @endforelse
           </div>
-          <div class="mt-3 d-flex justify-content-end pagination" data-aos="flip-right" data-aos-delay="300">
-            
+         <div class="row">
+            <div class="col-12 mt-4">
+              {{ $products->links() }}
+            </div>
           </div>
         </div>
       </section>
