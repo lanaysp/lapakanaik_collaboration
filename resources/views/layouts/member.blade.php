@@ -54,6 +54,17 @@
             </a>
             <a href="{{ route('supports.index') }}" class="list-group-item list-group-item-action {{ (request()->is('member/supports')) ? 'active' : '' }}">
                <i class="fas fa-headset"></i> Kotak Saran
+
+            <hr style="border-top: 1px solid #ccc;">
+            </a>
+            <a href="{{ route('alquran') }}" class="list-group-item list-group-item-action {{ (request()->is('member/alquran')) ? 'active' : '' }}">
+               <i class="fas fa-book-open"></i> Al Quran
+            </a>
+            <a href="{{ route('tahlil') }}" class="list-group-item list-group-item-action {{ (request()->is('member/tahlil')) ? 'active' : '' }}">
+               <i class="fas fa-pray"></i> Tahlil
+            </a>
+            <a href="{{ route('wirid') }}" class="list-group-item list-group-item-action {{ (request()->is('member/wirid')) ? 'active' : '' }}">
+               <i class="fas fa-book-open"></i> Wirid
             </a>
 
             <a href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();" class="list-group-item list-group-item-action">

@@ -74,13 +74,13 @@
                   class="rounded-circle mr-2 profile-picture"
                 /> --}}
                 HI, {{ Auth::user()->name }}
-              </a>
-              <div class="dropdown-menu">
+                <div class="dropdown-menu">
                   @if ( Auth::user()->id != 1)
                   <a href="{{ route('member-dashboard') }}" class="dropdown-item">Dashboard</a>
                   @else
                   <a href="{{ route('dashboard') }}" class="dropdown-item">Dashboard</a>
                   @endif
+                </a>
 
 
               <div class="dropdown-divider"></div>

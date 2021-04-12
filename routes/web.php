@@ -94,6 +94,15 @@ Route::prefix('member')
         ->name('dashboard-settings-redirect');
          Route::get('/dashboard/settings', 'DashboardSettingController@index')
         ->name('dashboard-settings-store');
+         Route::get('alquran', 'IslamicController@index')
+        ->name('alquran');
+        Route::get('sura/{id}', 'IslamicController@sura')
+        ->name('detail-alquran');
+        Route::get('tahlil', 'IslamicController@tahlil')
+       ->name('tahlil');
+        Route::get('wirid', 'IslamicController@wirid')
+       ->name('wirid');
+
     });
 
 Route::prefix('admin')

@@ -12,8 +12,6 @@ use App\User;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Str;
 
-use App\Http\Requests\Admin\UserRequest;
-
 
 class MessagesController extends Controller
 {

@@ -11490,7 +11490,7 @@ footer span {
   margin-left: 0;
 }
 
-.page-dashboard .navbar-store {
+.page-dashboard .navbar-store{
   margin-top: 0;
   background-color: #f1f2f6;
   -webkit-box-shadow: 0px 4px 5px #cacad1;
@@ -12185,7 +12185,7 @@ h5 {
     font-size :15px;
 }
 .detail{
-  color:#007691;  
+  color:#007691;
 }
 .detail:active{
     color:#FFB60C;

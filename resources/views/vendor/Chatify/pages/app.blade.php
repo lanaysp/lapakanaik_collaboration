@@ -1,3 +1,5 @@
+
+{{-- <link rel="shortcut icon" href="/images/logo.png" /> --}}
 <title>{{ $title }}</title>
 @include('Chatify::layouts.headLinks')
 <div class="messenger">
