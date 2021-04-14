@@ -96,12 +96,16 @@ Route::prefix('member')
         ->name('dashboard-settings-store');
          Route::get('alquran', 'IslamicController@index')
         ->name('alquran');
+         Route::get('doa', 'IslamicController@doa')
+        ->name('doa');
         Route::get('sura/{id}', 'IslamicController@sura')
         ->name('detail-alquran');
         Route::get('tahlil', 'IslamicController@tahlil')
        ->name('tahlil');
         Route::get('wirid', 'IslamicController@wirid')
        ->name('wirid');
+        Route::get('solat', 'IslamicController@solat')
+       ->name('solat');
 
     });
 

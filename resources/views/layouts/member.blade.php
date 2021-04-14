@@ -58,13 +58,21 @@
             <hr style="border-top: 1px solid #ccc;">
             </a>
             <a href="{{ route('alquran') }}" class="list-group-item list-group-item-action {{ (request()->is('member/alquran')) ? 'active' : '' }}">
-               <i class="fas fa-book-open"></i> Al Quran
+                <i class="fas fa-quran"></i> Al Quran
+            </a>
+            <a href="{{ route('doa') }}" class="list-group-item list-group-item-action {{ (request()->is('member/doa')) ? 'active' : '' }}">
+               <i class="fas fa-hands"></i> Doa
             </a>
             <a href="{{ route('tahlil') }}" class="list-group-item list-group-item-action {{ (request()->is('member/tahlil')) ? 'active' : '' }}">
                <i class="fas fa-pray"></i> Tahlil
             </a>
             <a href="{{ route('wirid') }}" class="list-group-item list-group-item-action {{ (request()->is('member/wirid')) ? 'active' : '' }}">
-               <i class="fas fa-book-open"></i> Wirid
+              <i class="fas fa-book-open"></i> Wirid
+            </a>
+            <a href="" class="list-group-item list-group-item-action">
+               <i class="fas fa-mosque"></i> Khutbah
+              <hr style="border-top: 1px solid #ccc;">
+
             </a>
 
             <a href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();" class="list-group-item list-group-item-action">

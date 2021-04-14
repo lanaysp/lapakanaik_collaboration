@@ -64,7 +64,232 @@ textarea::-webkit-input-placeholder {
     <div class="dashboard-content">
       <div class="row">
         <div class="col-12">
+            <form action="{{ route('dashboard-settings-redirect','dashboard-settings-store') }}" method="POST" enctype="multipart/form-data" id="locations">
+            @csrf
+            <div class="card">
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="name">Nama</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="name"
+                        name="name"
+                        value="{{ $user->name }}"
+                      disabled/>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="email">Email</label>
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="email"
+                        name="email"
+                        value="{{ $user->email }}"
+                      disabled/>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="name">Nama Majelis</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id=""
+                        name="nama_majelis"
+                        value="{{ $user->nama_majelis }}"
+                        required
+                      />
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="address_one">Email Majelis</label>
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="email_majelis"
+                        name="email_majelis"
+                        placeholder="Email@majleis.co.id"
+                        value="{{ $user->email_majelis }}"
+                        required
+                      />
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="wa_majelis">Kontak Wa Majelis</label>
+                      <input
+                        type="number"
+                        class="form-control"
+                        id="wa_majelis"
+                        name="wa_majelis"
+                        placeholder="629630409927"
+                        value="{{ $user->wa_majelis }}"
+                        required
+                      />
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="pengurus_majelis">Pengurus Majelis</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="pengurus_majelis"
+                        name="pengurus_majelis"
+                        placeholder="Jang Anik"
+                        value="{{ $user->pengurus_majelis }}"
+                        required
+                      />
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="form-group">
+                      <label for="alamat_majelis">Alamat Lengkap Majelis</label>
+                      <textarea class="form-control" name="alamat_majelis" id="alamat_majelis" cols="30" rows="10" placeholder="Jl. Prawira Kepolo, Rt/Rw. 004/001, Ds. Singaraja, Kec. Indramayu" required> {{ $user->alamat_majelis }} </textarea>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="form-group">
+                      <label for="provinces_id">Provinsi</label>
+                      <select name="provinces_id" id="provinces_id" class="form-control" v-if="provinces" v-model="provinces_id" required>
+                        <option v-for="province in provinces" :value="province.id">@{{ province.name }}</option>
+                      </select>
+                      <select v-else class="form-control"></select>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="form-group">
+                      <label for="regencies_id">Kota</label>
+                      <select name="regencies_id" id="regencies_id" class="form-control" v-if="regencies" v-model="regencies_id" required>
+                        <option v-for="regency in regencies" :value="regency.id">@{{ regency.name }}</option>
+                      </select>
+                      <select v-else class="form-control"></select>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="form-group">
+                      <label for="zip_code">Kode pos</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="zip_code"
+                        name="zip_code"
+                        value="{{ $user->zip_code }}"
+                        required
+                      />
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="form-group">
+                      <label for="sejarah_majelis">Sejarah Lengkap Majelis</label>
+                      <textarea class="form-control" name="sejarah_majelis" id="sejarah_majelis" cols="30" rows="10" placeholder="Isikan sesuai sejarah majelis/group hadroh anda" required>{{ $user->sejarah_majelis }} </textarea>
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="form-group">
+                      <label for="layanan_majelis">Layanan Majelis</label>
+                      <textarea class="form-control" name="layanan_majelis" id="layanan_majelis" cols="30" rows="10" placeholder="Tuliskan apa saja layanan dari majelis anda, contoh seperti :
+1. Acara nikahan
+2. Acara Khitanan
+3. Dan lain sebagainya" required>{{ $user->layanan_majelis }} </textarea>
+                    </div>
+                  </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="visi_majelis">Visi</label>
+                      <textarea class="form-control" name="visi_majelis" id="visi_majelis" cols="30" rows="10" placeholder="Tuliskan visi majelis anda ..." required>{{ $user->visi_majelis }} </textarea>
+                    </div>
+                  </div>
 
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="misi_majelis">Misi</label>
+                      <textarea class="form-control" name="misi_majelis" id="misi_majelis" cols="30" rows="10" placeholder="Tuliskan mis majelis anda ..." required>{{ $user->misi_majelis }} </textarea>
+                    </div>
+                  </div>
+                </div>
+                <h4 class="mt-4 mb-3">Info Tambahan</h4>
+                <div class="row">
+                    <div class="col-md-4">
+                    <div class="form-group">
+                      <label for="yt">Link Youtube</label>
+                      <input
+                        type="url"
+                        class="form-control"
+                        id="yt"
+                        name="yt"
+                        value="{{ $user->yt }}"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="form-group">
+                      <label for="ig">Username Instagram</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="ig"
+                        name="ig"
+                        value="{{ $user->ig }}"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="form-group">
+                      <label for="fb">Username Facebook</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="fb"
+                        name="fb"
+                        value="{{ $user->fb }}"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-md-4 offset-2">
+                    <div class="form-group">
+                      <label for="tt">Username Tiktok</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="tt"
+                        name="tt"
+                        value="{{ $user->tt }}"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="form-group">
+                      <label for="tw">Username Twitter</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="tw"
+                        name="tw"
+                        value="{{ $user->tw }}"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col text-right">
+                    <button
+                      type="submit"
+                      class="btn btn-primary px-5"
+                    >
+                      Update Profile
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
         </div>
       </div>
     </div>

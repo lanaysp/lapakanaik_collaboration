@@ -1,7 +1,7 @@
 @extends('layouts.member')
 
 @section('title')
-  Al-Quran
+  Tahlil
 @endsection
 
 @section('content')
