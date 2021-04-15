@@ -28,7 +28,8 @@
         <div class="col-lg-12">
             <div class="dashboard-content">
               <div class="row">
-                <div class="col-md-4">
+                  <div class="col-md-4">
+                    <a id="link" href="{{ route('alquran') }}">
                   <div class="card mb-2">
                     <div class="card-body">
                       <div class="dashboard-card-title">
@@ -39,21 +40,26 @@
                       </div>
                     </div>
                   </div>
+                </a>
                 </div>
-                <div class="col-md-4">
-                  <div class="card mb-2">
-                    <div class="card-body">
-                      <div class="dashboard-card-title">
 
-                      </div>
-                      <div class="dashboard-card-subtitle">
+                <div class="col-md-4">
+                 <a id="link" href="{{ route('doa') }}">
+                    <div class="card mb-2">
+                        <div class="card-body">
+                            <div class="dashboard-card-title">
+
+                            </div>
+                        <div class="dashboard-card-subtitle">
                         <i class="fas fa-hands"></i> Doa
-                      </div>
+                        </div>
                     </div>
-                  </div>
+                    </div>
+                 </a>
                 </div>
                 <div class="col-md-4">
-                  <div class="card mb-2">
+                <a href="{{ route('tahlil') }}" id="link">
+                    <div class="card mb-2">
                     <div class="card-body">
                       <div class="dashboard-card-title">
 
@@ -64,10 +70,12 @@
                     </div>
                   </div>
                 </div>
+                </a>
               </div>
               <div class="row">
                 <div class="col-md-4">
-                  <div class="card mb-2">
+                 <a href="{{ route('wirid') }}" id="link">
+                     <div class="card mb-2">
                     <div class="card-body">
                       <div class="dashboard-card-title">
 
@@ -77,9 +85,11 @@
                       </div>
                     </div>
                   </div>
+                </a>
                 </div>
                 <div class="col-md-4">
-                  <div class="card mb-2">
+                  <a href="" id="link">
+                    <div class="card mb-2">
                     <div class="card-body">
                       <div class="dashboard-card-title">
 
@@ -89,6 +99,7 @@
                       </div>
                     </div>
                   </div>
+                  </a>
                 </div>
                 <div class="col-md-4">
                   <div class="card mb-2">
@@ -113,14 +124,13 @@
         <div class="col-12 mt-2">
           <h5 class="mb-3">Jadwal Solat :  {{ $data['result']['lokasi'] }} </h5>
           <div class="row mb-2">
-              <div class="col-3">
+              <div class="col-lg-3 col-12">
                   Tanggal : {{ $data['result']['jadwal']['tanggal'] }}
               </div>
-              <div class="col-1 clock"></div>
+             <div class="col-lg-3 col-12">
+                  Jam :    <span class="clock"> </span>
+             </div>
           </div>
-
-
-
 
                  <a href="" class="card card-list d-block">
                     <div class="card-body">
