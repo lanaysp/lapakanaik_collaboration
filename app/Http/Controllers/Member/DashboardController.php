@@ -21,7 +21,7 @@ class DashboardController extends Controller
 
         $user = str_replace(['KABUPATEN','KOTA'],null, $user->kota->name);
 
-        $suspect = Http::get('https://api.fahmicog.site/muslim/jadwalshalat?kota='.$user.'&apikey=freeTrial2k21');
+        $suspect = Http::get('https://api.fahmicog.site/muslim/jadwalshalat?kota='.$user.'&apikey=lanaysp');
         $data = $suspect->json();
 
         return view('pages.member.dashboard',compact('data'),[

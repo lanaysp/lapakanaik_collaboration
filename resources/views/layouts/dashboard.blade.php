@@ -44,6 +44,7 @@
              <i class="far fa-hand-peace"></i></i> Support
 
             <hr class="" style="background-color: white;">
+            </a>
 
             <!--<a href="{{ route('dashboard-product') }}" class="list-group-item list-group-item-action {{ (request()->is('dashboard/products*')) ? 'active' : '' }}">-->
             <!--   <i class="fab fa-youtube"></i> Video Member-->
@@ -59,11 +60,16 @@
             </a>
             <a href="{{ route('sosial.index') }}" class="list-group-item list-group-item-action {{ (request()->is('admin/sosial*')) ? 'active' : '' }}">
                <i class="far fa-user-circle"></i> Web Information
+            <hr class="" style="background-color: white;">
+            </a>
+            <a href="{{ route('khutbah.index') }}" class="list-group-item list-group-item-action {{ (request()->is('admin/khutbah')) ? 'active' : '' }}">
+               <i class="fas fa-mosque"></i> Konten Khutbah
+            </a>
+            <a href="{{ route('khutbahcategory.index') }}" class="list-group-item list-group-item-action {{ (request()->is('admin/khutbahcategory')) ? 'active' : '' }}">
+               <i class="fas fa-mosque"></i> Kategori Khutbah
+            <hr class="" style="background-color: white;">
+            </a>
 
-
-
-
-<hr class="" style="background-color: white;">
             <a href="{{ route('home') }}" class="list-group-item list-group-item-action">
                <i class="fas fa-home"></i> Home
             </a>
