@@ -134,8 +134,8 @@ class KhutbahController extends Controller
 
         $item = Khutbah::findOrFail($id);
 
-        $data['slug'] = Str::slug($request->name);
-        // $data['photo'] = $request->file('photo')->store('assets/khutbah', 'public');
+        $data['slug'] = Str::slug($request->slug);
+        $data['photo'] = $request->file('photo')->store('assets/khutbah', 'public');
 
         $item->update($data);
 

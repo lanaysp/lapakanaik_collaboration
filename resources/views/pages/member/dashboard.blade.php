@@ -88,7 +88,7 @@
                 </a>
                 </div>
                 <div class="col-md-4">
-                  <a href="" id="link">
+                  <a href="{{ route('khutbah') }}" id="link">
                     <div class="card mb-2">
                     <div class="card-body">
                       <div class="dashboard-card-title">

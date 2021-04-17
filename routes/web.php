@@ -98,7 +98,7 @@ Route::prefix('member')
         ->name('alquran');
          Route::get('doa', 'IslamicController@doa')
         ->name('doa');
-        Route::get('sura/{id}', 'IslamicController@sura')
+        Route::get('alquran/sura/{id}', 'IslamicController@sura')
         ->name('detail-alquran');
         Route::get('tahlil', 'IslamicController@tahlil')
        ->name('tahlil');
@@ -106,6 +106,9 @@ Route::prefix('member')
        ->name('wirid');
         Route::get('solat', 'IslamicController@solat')
        ->name('solat');
+    //    khutbah route
+Route::get('khutbah', 'IslamicController@khutbah')->name('khutbah');
+Route::get('/detail-khutbah/{id}', 'IslamicController@detail')->name('detail-khutbah');
 
     });
 

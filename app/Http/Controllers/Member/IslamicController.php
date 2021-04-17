@@ -4,8 +4,11 @@ namespace App\Http\Controllers\Member;
 
 
 use App\Http\Controllers\Controller;
+use App\Khutbah;
+use App\Khutbahcategory;
 use Illuminate\Support\Facades\Http;
 use Illuminate\Pagination\LengthAwarePaginator;
+use Illuminate\Http\Request;
 
 
 class IslamicController extends Controller
@@ -61,7 +64,30 @@ class IslamicController extends Controller
         return view('pages.member.dashboard-doa',compact('data'));
     }
 
+    public function khutbah()
+    {
+        $data = Khutbah::all();
+        return view('pages.member.dashboard-khutbah',[
+            'data' => $data,
+        ]);
+    }
 
+    public function detail(Request $request, $slug)
+    {
+        $khutbah = Khutbah::where('slug', $slug)->firstOrFail();
+        $khutbahs = Khutbah::take(4)
+                ->orderBy('id', 'desc')
+                ->get();
+        $khutbahcategori = Khutbahcategory::take(6)->latest()->get();
+
+
+
+        return view('pages.member.khutbah-detail',[
+            'khutbah' => $khutbah,
+            'khutbahs' => $khutbahs,
+            'khutbahcategori' => $khutbahcategori,
+        ]);
+    }
 
 }
 
