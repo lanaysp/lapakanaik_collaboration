@@ -31,7 +31,7 @@
     <div class="d-flex" id="wrapper" data-aos="fade-right">
         <!-- Sidebar -->
         <div class="border-right" id="sidebar-wrapper">
-          <div class="sidebar-heading text-center mb-5">
+          <div class="sidebar-heading text-center mb-5 ">
              <a href="{{ route('home') }}">
                  <img src="/images/logods.png" alt="" class="" style="width: 100px;"/>
              </a>
@@ -56,6 +56,13 @@
                <i class="fas fa-headset"></i> Kotak Saran
 
             <hr style="border-top: 1px solid #ccc;">
+            </a>
+            <a href="{{ route('hadroh.tutor','tutorial') }}" class="list-group-item list-group-item-action {{ (request()->is('member/tutorial-hadroh*')) ? 'active' : '' }}">
+               <i class="fas fa-play-circle"></i> Tutorial Hadroh
+            </a>
+            <a href="" class="list-group-item list-group-item-action">
+               <i class="fas fa-headset"></i> Pesan Alat Hadroh <span class="badge badge-success badge-pill">Spesial</span>
+               <hr style="border-top: 1px solid #ccc;">
             </a>
             <a href="{{ route('alquran') }}" class="list-group-item list-group-item-action {{ (request()->is('member/alquran*')) ? 'active' : '' }}">
                 <i class="fas fa-quran"></i> Al Quran

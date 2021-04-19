@@ -106,9 +106,11 @@ Route::prefix('member')
        ->name('wirid');
         Route::get('solat', 'IslamicController@solat')
        ->name('solat');
-    //    khutbah route
-Route::get('khutbah', 'IslamicController@khutbah')->name('khutbah');
-Route::get('/detail-khutbah/{id}', 'IslamicController@detail')->name('detail-khutbah');
+        //    khutbah route
+        Route::get('khutbah', 'IslamicController@khutbah')->name('khutbah');
+        Route::get('/detail-khutbah/{id}', 'IslamicController@detail')->name('detail-khutbah');
+        // route hadroh
+        Route::get('tutorial-hadroh/{id}', 'HadrohController@tutorial')->name('hadroh.tutor');
 
     });
 
