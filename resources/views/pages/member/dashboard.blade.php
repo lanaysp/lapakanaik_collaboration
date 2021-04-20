@@ -22,6 +22,19 @@
                 Dashboard Member
               </p>
             </div>
+
+      <div class="dashboard-content justify-content-center">
+      <div class="row">
+        <div class="col-12">
+             @if ($errors->any())
+                <div class="alert alert-danger">
+                    <ul>
+                        @foreach ($errors->all() as $error)
+                            <li>{{ $error }}</li>
+                        @endforeach
+                    </ul>
+                </div>
+            @endif
             <div class="dashboard-content">
 <div class="row">
     <div class="container text-center mt-4">
@@ -120,6 +133,7 @@
 </div>
 {{-- content  --}}
 
+
      <div class="row mt-3">
         <div class="col-12 mt-2">
           <h5 class="mb-3">Jadwal Solat :  {{ $data['result']['lokasi'] }} </h5>
@@ -132,33 +146,35 @@
              </div>
           </div>
 
-                 <a href="" class="card card-list d-block">
-                    <div class="card-body">
-                        <div class="row">
-                            <div class="col-md-2">
-                                Subuh
-                            </div>
-                            <div class="col-md-2">
-                                Dzuhur
-                            </div>
-                            <div class="col-md-2">
-                                Ashar
-                            </div>
-                            <div class="col-md-2">
-                                Magrib
-                            </div>
-                            <div class="col-md-2">
-                                Isa
-                            </div>
-                            <div class="col-md-2">
-                                Imsyak
+            {{-- <div class="row"> --}}
+                    <a href="" class="card card-list d-block">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-2">
+                                    Subuh
+                                </div>
+                                <div class="col-md-2">
+                                    Dzuhur
+                                </div>
+                                <div class="col-md-2">
+                                    Ashar
+                                </div>
+                                <div class="col-md-2">
+                                    Magrib
+                                </div>
+                                <div class="col-md-2">
+                                    Isa
+                                </div>
+                                <div class="col-md-2">
+                                    Imsyak
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </a>
+                    </a>
             {{-- @foreach ($data['result']['jadwal'] as $item)
              @if ($item['jadwal']['tanggal'] == now()) --}}
-                <a href="" class="card card-list d-block">
+
+                    <a href="" class="card card-list d-block">
                     <div class="card-body">
                         <div class="row">
                             <div class="col-md-2">
@@ -182,11 +198,14 @@
                         </div>
                     </div>
                 </a>
+                {{-- @endif --}}
+            {{-- </div> --}}
                     {{-- @endif
             @endforeach --}}
 
 
         </div>
+
     </div>
 
 </div>

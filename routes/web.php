@@ -111,6 +111,7 @@ Route::prefix('member')
         Route::get('/detail-khutbah/{id}', 'IslamicController@detail')->name('detail-khutbah');
         // route hadroh
         Route::get('tutorial-hadroh/{id}', 'HadrohController@tutorial')->name('hadroh.tutor');
+        Route::get('buy-hadroh', 'HadrohController@sell')->name('sell');
 
     });
 

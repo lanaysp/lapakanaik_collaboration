@@ -60,8 +60,8 @@
             <a href="{{ route('hadroh.tutor','tutorial') }}" class="list-group-item list-group-item-action {{ (request()->is('member/tutorial-hadroh*')) ? 'active' : '' }}">
                <i class="fas fa-play-circle"></i> Tutorial Hadroh
             </a>
-            <a href="" class="list-group-item list-group-item-action">
-               <i class="fas fa-headset"></i> Pesan Alat Hadroh <span class="badge badge-success badge-pill">Spesial</span>
+            <a href="{{ route('sell') }}" class="list-group-item list-group-item-action {{ (request()->is('member/buy*')) ? 'active' : '' }}">
+               <i class="fas fa-shopping-cart"></i> Pesan Hadroh <span class="badge badge-pill badge-danger">Spesial</span>
                <hr style="border-top: 1px solid #ccc;">
             </a>
             <a href="{{ route('alquran') }}" class="list-group-item list-group-item-action {{ (request()->is('member/alquran*')) ? 'active' : '' }}">
@@ -82,7 +82,7 @@
 
             </a>
 
-            <a href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();" class="list-group-item list-group-item-action">
+            <a href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();" class="list-group-item list-group-item-action mb-5">
              <i class="fas fa-sign-out-alt"></i> Sign Out
              <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                 @csrf

@@ -19,4 +19,9 @@ class HadrohController extends Controller
             'products' => $products
         ]);
     }
+
+    public function sell(){
+
+        return view('pages.member.dashboard-sell');
+    }
 }
