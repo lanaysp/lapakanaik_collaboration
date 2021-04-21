@@ -83,7 +83,7 @@
                                     </div>
                                 <fieldset class="form-group col-6 mt-4">
                                     <legend class="col-form-label col-sm-2 float-sm-left pt-0">Model</legend>
-                                    <div class="col-sm-10" required>
+                                    <div class="col-sm-10">
                                     <div class="form-check">
                                         <input class="form-check-input" type="radio" name="model" id="model" value="Ukiran">
                                         <label class="form-check-label" for="flexRadioDefault1">
@@ -130,7 +130,7 @@ var input_blanter = document.getElementById('alamat');
 
 /* Whatsapp Settings */
 var walink = 'https://web.whatsapp.com/send',
-    phone = '6285156306403',
+    phone = '6285156596073',
     walink2 = 'Halo saya ingin memesan alat musik hadroh dengan keterangan sebagai berikut ',
     text_yes = 'Terkirim.',
     text_no = 'Isi semua Formulir lalu klik Pesan Sekarang.';
