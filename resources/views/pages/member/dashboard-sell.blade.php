@@ -81,23 +81,14 @@
                                         <label for="exampleInputEmail1">Request Warna</label>
                                          <input type="color" name="color" id="color" class="form-control validate" required>
                                     </div>
-                                <fieldset class="form-group col-6 mt-4">
-                                    <legend class="col-form-label col-sm-2 float-sm-left pt-0">Model</legend>
-                                    <div class="col-sm-10">
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="radio" name="model" id="model" value="Ukiran">
-                                        <label class="form-check-label" for="flexRadioDefault1">
-                                            Ukiran
-                                        </label>
-                                        </div>
-                                        <div class="form-check">
-                                        <input class="form-check-input" type="radio" name="model" id="model" value="Polos">
-                                        <label class="form-check-label" for="flexRadioDefault2">
-                                            Polos
-                                        </label>
-                                        </div>
+                                 <div class="form-group col-6">
+                                        <label for="exampleInputEmail1">Model</label>
+                                        <select name="model" id="model" class="form-control validate" required>
+                                            <option hidden='hidden' selected='selected' value='default'>Pilih Model</option>
+                                            <option value="Ukiran">Ukiran</option>
+                                            <option value="Polosan">Polosan</option>
+                                        </select>
                                     </div>
-                                </fieldset>
                                 </div>
                                 <div class="form-group">
                                     <label for="alamat">Alamat</label>
@@ -111,7 +102,7 @@
                                     <span>NB: Pesanan anda akan dirangkum lebih lanjut oleh tim Lapakanik melalui whatsapp.</span>
                                 </div>
 
-                                <a class="send_form btn btn-primary float-right" href="javascript:void" type="submit" title="Pesan Sekarang">Pesan Sekarang</a>
+                                <a class="send_form btn btn-primary float-right" href="javascript:void" type="submit" title="Pesan Sekarang"><i class="fab fa-whatsapp"></i> Pesan Sekarang</a>
                                 <div id="text-info"></div>
                             </form>
                         </div>
@@ -146,7 +137,7 @@ if("" != input_blanter.value){
 var input_select1 = $("#paket :selected").text(),
     input_select2 = $("#produk :selected").text(),
     input_name1 = $("#nama").val(),
-    input_model1 = $("#model").val(),
+    input_model1 =  $("#model :selected").text(),
     input_warna1 = $("#color").val(),
     input_email1 = $("#email").val(),
     input_hp1 = $("#hp").val(),

@@ -53,7 +53,7 @@
                <i class="fas fa-comments"></i></i> Support
             </a>
             <a href="{{ route('supports.index') }}" class="list-group-item list-group-item-action {{ (request()->is('member/supports')) ? 'active' : '' }}">
-               <i class="fas fa-headset"></i> Kotak Saran
+               <i class="fas fa-box-open"></i> Kotak Saran
 
             <hr style="border-top: 1px solid #ccc;">
             </a>
@@ -105,6 +105,7 @@
               </button>
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                  <!-- Desktop Menu -->
+                  {{-- {!! $unseenCounter > 0 ? "<b>".$unseenCounter."</b>" : '' !!} --}}
                 <ul class="navbar-nav d-none d-flex ml-auto mr-5">
                   <li class="nav-item dropdown">
                     <a

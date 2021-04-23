@@ -11,7 +11,7 @@ use App\Khutbahcategory;
 use App\Http\Requests\Admin\KhutbahcategoryRequest;
 
 
-class KhutbahcategoryController extends Controller
+class KhutbahCategoryController extends Controller
 {
     /**
      * Display a listing of the resource.

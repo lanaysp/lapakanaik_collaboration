@@ -49,7 +49,7 @@
 
                       </div>
                       <div class="dashboard-card-subtitle">
-                        <i class="fas fa-quran"></i> Alquran
+                        <img src="/images/islamic/quran.svg" class="w-25" alt=""> Alquran
                       </div>
                     </div>
                   </div>
@@ -64,7 +64,7 @@
 
                             </div>
                         <div class="dashboard-card-subtitle">
-                        <i class="fas fa-hands"></i> Doa
+                        <img src="/images/islamic/doa.svg" class="w-25" alt=""> Doa
                         </div>
                     </div>
                     </div>
@@ -78,7 +78,7 @@
 
                       </div>
                       <div class="dashboard-card-subtitle">
-                        <i class="fas fa-pray"></i> Tahlil
+                        <img src="/images/islamic/wirid.svg" class="w-25" alt=""> Tahlil
                       </div>
                     </div>
                   </div>
@@ -94,7 +94,7 @@
 
                       </div>
                       <div class="dashboard-card-subtitle">
-                        <i class="fas fa-book-open"></i> Wirid
+                        <img src="/images/islamic/tasbih.svg" class="w-25" alt=""> Wirid
                       </div>
                     </div>
                   </div>
@@ -108,28 +108,30 @@
 
                       </div>
                       <div class="dashboard-card-subtitle">
-                        <i class="fas fa-mosque"></i> Khutbah
+                        <img src="/images/islamic/khutbah.svg" class="w-25" alt=""> Khutbah
                       </div>
                     </div>
                   </div>
                   </a>
                 </div>
                 <div class="col-md-4">
-                  <div class="card mb-2">
-                    <div class="card-body">
-                      <div class="dashboard-card-title">
-
-                      </div>
-                      <div class="dashboard-card-subtitle">
-                        <i class="fas fa-ellipsis-v"></i> Lainnya
-                      </div>
+                  <a href="{{ route('sell') }}" id="link">
+                    <div class="card mb-2">
+                        <div class="card-body">
+                            <div class="dashboard-card-title">
+                            </div>
+                            <div class="dashboard-card-subtitle">
+                                <img src="/images/islamic/buy.svg" class="w-25" alt=""> Hadroh
+                            </div>
+                        </div>
                     </div>
-                  </div>
+                  </a>
                 </div>
               </div>
             </div>
         </div>
     </div>
+
 </div>
 {{-- content  --}}
 
@@ -146,7 +148,7 @@
              </div>
           </div>
 
-            {{-- <div class="row"> --}}
+            <div class="d-none d-lg-block">
                     <a href="" class="card card-list d-block">
                         <div class="card-body">
                             <div class="row">
@@ -199,7 +201,33 @@
                     </div>
                 </a>
                 {{-- @endif --}}
-            {{-- </div> --}}
+            </div>
+             <a href="" class="card card-list d-block d-sm-none">
+                    <div class="card-body">
+                        <div class="row">
+                           <table>
+                               <tr>
+                                    <td>Subuh</td> <td> : </td> <td> {{ $data['result']['jadwal']['subuh'] }} </td>
+                               </tr>
+                               <tr>
+                                    <td>Dzuhur</td> <td> : </td> <td> {{ $data['result']['jadwal']['dzuhur'] }} </td>
+                               </tr>
+                               <tr>
+                                    <td>Ashar</td> <td> : </td> <td> {{ $data['result']['jadwal']['ashar'] }} </td>
+                               </tr>
+                               <tr>
+                                    <td>Magrib</td> <td> : </td> <td> {{ $data['result']['jadwal']['maghrib'] }} </td>
+                               </tr>
+                               <tr>
+                                    <td>Isa</td> <td> : </td> <td> {{ $data['result']['jadwal']['isya'] }} </td>
+                               </tr>
+                               <tr>
+                                    <td>Imsyak</td> <td> : </td> <td> {{ $data['result']['jadwal']['imsak'] }} </td>
+                               </tr>
+                           </table>
+                        </div>
+                    </div>
+                </a>
                     {{-- @endif
             @endforeach --}}
 
@@ -211,10 +239,13 @@
 </div>
     <!-- /end page -->
 
+
+
 @endsection
 
 
 @push('addon-script')
+
 <script>
     function clock() {// We create a new Date object and assign it to a variable called "time".
         var time = new Date(),

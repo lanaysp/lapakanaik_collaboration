@@ -57,7 +57,7 @@ class IslamicController extends Controller
 
     public function doa()
     {
-        $suspects = Http::get('https://api.fahmicog.site/muslim/doaharian?apikey=lanaysp');
+        $suspects = Http::get('https://fahmiapi.herokuapp.com/muslim/doaharian?apikey=lanaysp');
         $data = $suspects->json();
 
 

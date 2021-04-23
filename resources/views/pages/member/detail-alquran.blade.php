@@ -87,14 +87,12 @@
                     </ul>
                 </div>
             @endif
-            {{-- @php
-                echo to_arabic_number($eastern_arabic = 1);
-            @endphp --}}
+
 
            <div class="row">
                <div class="container mt-5">
                     @foreach ($data['data']['verses'] as $item )
-                        <h3 class="text-right mt-3 ">{{ $item['text']['arab']}} </h3>
+                        <h3 class="text-right mt-3 ">{{ $item['text']['arab'] }} ~ {{ $item['number']['inSurah'] }}</h3>
                         <h6 class="text-left mt-2">{{ $item['translation']['id'] }}</h6>
                     @endforeach
                </div>
@@ -109,7 +107,4 @@
 @endsection
 
 @push('addon-script')
-    <script>
-       <script src="https://gist.github.com/kadimi/9912940.js"></script>
-    </script>
 @endpush

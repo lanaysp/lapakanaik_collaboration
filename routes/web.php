@@ -128,8 +128,8 @@ Route::prefix('admin')
         Route::resource('product', 'ProductController');
         Route::resource('product-gallery', 'ProductGalleryController');
         Route::resource('sosial','SosialController');
-        Route::resource('khutbahcategory','khutbahcategoryController');
-        Route::resource('khutbah','khutbahController');
+        Route::resource('khutbahcategory','KhutbahcategoryController');
+        Route::resource('khutbah','KhutbahController');
     });
 
 // Auth::routes();

@@ -1,7 +1,7 @@
 @extends('layouts.member')
 
 @section('title')
-  Support
+  Kotak Saran
 @endsection
 
 @section('content')
