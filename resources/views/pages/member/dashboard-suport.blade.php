@@ -12,7 +12,7 @@
 >
   <div class="container-fluid">
     <div class="dashboard-heading">
-      <h2 class="dashboard-title">Suport</h2>
+      <h2 class="dashboard-title">Kotak Saran</h2>
       <p class="dashboard-subtitle">
         Kotak Saran Lapakanik Colaburation
       </p>
@@ -38,10 +38,10 @@
                     </div>
                     <div class="form-group">
                         <label for="pesan">Pesan</label>
-                        <textarea class="form-control" name="pesan" id='wa_textarea' cols="30" rows="10"></textarea>
+                        <textarea class="form-control" name="pesan" id='wa_textarea' cols="30" rows="10" required></textarea>
                     </div>
-                    <a class="send_form btn btn-primary" href="javascript:void" type="submit" title="Send to Whatsapp">Kirim</a>
-                    <div id="text-info"></div>
+                    <a class="send_form btn btn-primary float-right" href="javascript:void" type="submit" title="Send to Whatsapp"><i class="fas fa-headset"></i> Kirim Saran</a>
+                    {{-- <div id="text-info"></div> --}}
                 </form>
             </div>
         </div>
@@ -55,11 +55,11 @@
 @push('addon-script')
     <script>
         $(document).on('click','.send_form', function(){
-var input_blanter = document.getElementById('wa_email');
+var input_blanter = document.getElementById('wa_textarea');
 
 /* Whatsapp Settings */
 var walink = 'https://web.whatsapp.com/send',
-    phone = '6285156306403',
+    phone = '6282260000513',
     walink2 = 'Assalamu alaikum Lapakanik, saya butuh bantuan terkait upload video, berikut data diri saya:  ',
     text_yes = 'Terkirim.',
     text_no = 'Isi semua Formulir lalu klik Kirim.';

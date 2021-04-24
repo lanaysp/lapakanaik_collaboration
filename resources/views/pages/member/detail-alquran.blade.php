@@ -7,6 +7,9 @@
 @section('content')
 
 @push('addon-style')
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
+<link rel='stylesheet' charset='utf-8'>
 <style>
     .card {
         margin: 0 auto; /* Added */
@@ -16,6 +19,12 @@
 #link {
             color : #FFB60C !important ;
         }
+.fa-bookmark:before {
+    content: "\f02e";
+}
+.fa-bookmark:after {
+    content: ""
+}
 </style>
 
 @endpush
@@ -91,10 +100,30 @@
 
            <div class="row">
                <div class="container mt-5">
-                    @foreach ($data['data']['verses'] as $item )
-                        <h3 class="text-right mt-3 ">{{ $item['text']['arab'] }} ~ {{ $item['number']['inSurah'] }}</h3>
+                   @php
+                        $no = '1';
+                        // // $western_arabic = array('0','1','2','3','4','5','6','7','8','9');
+                        // $eastern_arabic = array('٠','١','٢','٣','٤','٥','٦','٧','٨','٩');
+
+                        // $str = str_replace($no, $eastern_arabic, $no);
+                        function arabic_w2e($str)
+                            {
+                                $arabic_eastern = array('٠', '١', '٢', '٣', '٤', '٥', '٦', '٧', '٨', '٩');
+                                $arabic_western = array('0', '1', '2', '3', '4', '5', '6', '7', '8', '9');
+                                return str_replace($arabic_western, $arabic_eastern, $str);
+                            }
+
+                    @endphp
+                        @foreach ($data['data']['verses'] as $item )
+                        <div class="row">
+                            <div class="col-12">
+                                {{-- <span class="last-read far fa-bookmark" style="font-size: 1.8rem; cursor: pointer;"></span> --}}
+                                <h3 class="text-right mt-3 ">{{ $item['text']['arab'] }} ~  {{ arabic_w2e($no++) }}</h3>
                         <h6 class="text-left mt-2">{{ $item['translation']['id'] }}</h6>
-                    @endforeach
+                            </div>
+                        </div>
+                        @endforeach
+
                </div>
            </div>
 
@@ -107,4 +136,5 @@
 @endsection
 
 @push('addon-script')
+
 @endpush
