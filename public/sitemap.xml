@@ -1,172 +1,341 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
-
-
-<url>
-  <loc>https://video.lapakanik.co.id/</loc>
-  <lastmod>2021-01-15T07:05:14+00:00</lastmod>
-  <priority>1.00</priority>
-</url>
-<url>
-  <loc>https://video.lapakanik.co.id/categories</loc>
-  <lastmod>2021-01-15T07:05:14+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://video.lapakanik.co.id/categories/review</loc>
-  <lastmod>2021-01-15T07:05:14+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://video.lapakanik.co.id/categories/cek-sound</loc>
-  <lastmod>2021-01-15T07:05:14+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://video.lapakanik.co.id/categories/testimonial</loc>
-  <lastmod>2021-01-15T07:05:14+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://video.lapakanik.co.id/categories/dokumentasi</loc>
-  <lastmod>2021-01-15T07:05:14+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://video.lapakanik.co.id/categories/tutorial</loc>
-  <lastmod>2021-01-15T07:05:14+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://video.lapakanik.co.id/categories/podcast</loc>
-  <lastmod>2021-01-15T07:05:14+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://video.lapakanik.co.id/details/unboxing-fullset-alat-hadroh-ukiran-pesanan-lombok-timur</loc>
-  <lastmod>2021-01-15T07:05:14+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://video.lapakanik.co.id/details/cek-suara-hadroh-hasil-produksi-lapakanik-nusantara</loc>
-  <lastmod>2021-01-15T07:05:14+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://video.lapakanik.co.id/details/testimoni-terbaru-produk-lapakanik-kualitas-terjamin</loc>
-  <lastmod>2021-01-15T07:05:14+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://video.lapakanik.co.id/details/testimoni-alat-hadroh-fullset-motif-marmer-keramik</loc>
-  <lastmod>2021-01-15T07:05:14+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://video.lapakanik.co.id/details/testimoni-produk-lapakanik-fullset-hadroh-ukiran-terbaru</loc>
-  <lastmod>2021-01-15T07:05:14+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://video.lapakanik.co.id/details/testimoni-suara-keprak-hadroh-produk-lapakanik-rebana</loc>
-  <lastmod>2021-01-15T07:05:14+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://video.lapakanik.co.id/details/bukti-bahwa-produksi-lapakanik-rebana-terpercaya</loc>
-  <lastmod>2021-01-15T07:05:14+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://video.lapakanik.co.id/details/testimoni-lapakanik-produk-bass-ceper-sarang-tawon</loc>
-  <lastmod>2021-01-15T07:05:14+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://video.lapakanik.co.id/login</loc>
-  <lastmod>2021-01-15T07:05:14+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://video.lapakanik.co.id/details/tutorial-hadroh-dasar-cara-memegang-rebana-yang-benar</loc>
-  <lastmod>2021-01-15T07:05:14+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://video.lapakanik.co.id/details/cara-memukul-tak-dung-pada-hadroh-versi-lapakanik-rebana</loc>
-  <lastmod>2021-01-15T07:05:14+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://video.lapakanik.co.id/details/cek-suara-darbuka-hasil-produksi-lapakanik-rebana-jepara</loc>
-  <lastmod>2021-01-15T07:05:14+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://video.lapakanik.co.id/details/cek-sound-suara-hadroh-polosan-hasil-produksi-lapakanik-rebana</loc>
-  <lastmod>2021-01-15T07:05:14+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://video.lapakanik.co.id/details/alat-rebana-jepara-lengkap-yapis-singaraja-bali</loc>
-  <lastmod>2021-01-15T07:05:14+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://video.lapakanik.co.id/details/unboxing-alat-hadroh-fullset-ukiran-produk-lapakanik</loc>
-  <lastmod>2021-01-15T07:05:14+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://video.lapakanik.co.id/details/alat-musik-hadroh-jepara-pesanan-majelis-darul-amanah</loc>
-  <lastmod>2021-01-15T07:05:14+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://video.lapakanik.co.id/details/alat-hadroh-lengkap-tampilan-terbaru-motif-marmer</loc>
-  <lastmod>2021-01-15T07:05:14+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://video.lapakanik.co.id/details/rebana-jepara-asli-isi-4-jenis-polosan-kualitas-premium</loc>
-  <lastmod>2021-01-15T07:05:14+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://video.lapakanik.co.id/details/proses-finishing-di-pusat-produksi-alat-rebana-lapakanik</loc>
-  <lastmod>2021-01-15T07:05:14+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://video.lapakanik.co.id/details/proses-finishing-alat-hadroh-yang-bikin-mengkilap</loc>
-  <lastmod>2021-01-15T07:05:14+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://video.lapakanik.co.id/details/kekuatan-alat-musik-rebana-sebagai-media-dakwah</loc>
-  <lastmod>2021-01-15T07:05:14+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://video.lapakanik.co.id/categories?page=2</loc>
-  <lastmod>2021-01-15T07:05:14+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://video.lapakanik.co.id/password/reset</loc>
-  <lastmod>2021-01-15T07:05:14+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://video.lapakanik.co.id/categories?page=1</loc>
-  <lastmod>2021-01-15T07:05:14+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-
-
+<?xml-stylesheet href="/vendor/sitemap/styles/xml.xsl" type="text/xsl"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+	<url>
+	<loc>http://youtube.test</loc>
+		<priority>1.0</priority>
+		<lastmod>2012-08-25T18:10:00+00:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>http://youtube.test/details</loc>
+		<priority>0.9</priority>
+		<lastmod>2012-08-26T10:30:00+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+	</url>
+	<url>
+	<loc>http://youtube.test/details/unboxing-alat-hadroh-lengkap-ukiran-produk-lapakanik</loc>
+		<priority>1.0</priority>
+		<lastmod>2021-01-11T11:32:17+00:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>http://youtube.test/details/bukti-produksi-lapakanik-nusantara-terpercaya</loc>
+		<priority>1.0</priority>
+		<lastmod>2021-01-11T11:32:20+00:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>http://youtube.test/details/cara-memegang-hadroh-yang-baik-dan-benar</loc>
+		<priority>1.0</priority>
+		<lastmod>2021-01-11T11:32:23+00:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>http://youtube.test/details/alat-musik-rebana-hadroh-keren-untuk-majelis-sholawat</loc>
+		<priority>1.0</priority>
+		<lastmod>2021-01-11T11:32:48+00:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>http://youtube.test/details/pembuatan-alat-rebana-hadroh-produksi-jepara-terbaik</loc>
+		<priority>1.0</priority>
+		<lastmod>2021-01-11T11:32:51+00:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>http://youtube.test/details/cek-suara-hadroh-jenis-ukiran-produksi</loc>
+		<priority>1.0</priority>
+		<lastmod>2021-01-11T11:32:55+00:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>http://youtube.test/details/harga-hadroh-1-set-al-banjari-full-review-dan-cek-suara</loc>
+		<priority>1.0</priority>
+		<lastmod>2021-01-11T11:33:14+00:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>http://youtube.test/details/review-alat-rebana-hadroh-ukiran-merah-manggis</loc>
+		<priority>1.0</priority>
+		<lastmod>2021-01-11T11:33:17+00:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>http://youtube.test/details/harga-alat-hadroh-1-set-lengkap-versi-ukiran-jepara</loc>
+		<priority>1.0</priority>
+		<lastmod>2021-01-11T11:33:20+00:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>http://youtube.test/details/tutorial-hadroh-dasar-cara-memegang-rebana-yang-benar</loc>
+		<priority>1.0</priority>
+		<lastmod>2021-03-19T03:57:43+00:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>http://youtube.test/details/cara-memukul-tak-dung-pada-hadroh-versi-lapakanik-rebana</loc>
+		<priority>1.0</priority>
+		<lastmod>2021-03-19T07:27:22+00:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>http://youtube.test/details/cek-suara-darbuka-hasil-produksi-lapakanik-rebana-jepara</loc>
+		<priority>1.0</priority>
+		<lastmod>2021-01-11T11:51:05+00:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>http://youtube.test/details/cek-sound-suara-hadroh-polosan-hasil-produksi-lapakanik-rebana</loc>
+		<priority>1.0</priority>
+		<lastmod>2021-01-11T11:53:43+00:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>http://youtube.test/details/alat-rebana-jepara-lengkap-yapis-singaraja-bali</loc>
+		<priority>1.0</priority>
+		<lastmod>2021-03-17T06:56:27+00:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>http://youtube.test/details/unboxing-alat-hadroh-fullset-ukiran-produk-lapakanik</loc>
+		<priority>1.0</priority>
+		<lastmod>2021-01-11T16:12:05+00:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>http://youtube.test/details/alat-musik-hadroh-jepara-pesanan-majelis-darul-amanah</loc>
+		<priority>1.0</priority>
+		<lastmod>2021-01-11T16:14:32+00:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>http://youtube.test/details/alat-hadroh-lengkap-tampilan-terbaru-motif-marmer</loc>
+		<priority>1.0</priority>
+		<lastmod>2021-01-11T16:16:46+00:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>http://youtube.test/details/rebana-jepara-asli-isi-4-jenis-polosan-kualitas-premium</loc>
+		<priority>1.0</priority>
+		<lastmod>2021-01-12T04:30:25+00:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>http://youtube.test/details/proses-finishing-di-pusat-produksi-alat-rebana-lapakanik</loc>
+		<priority>1.0</priority>
+		<lastmod>2021-01-12T04:31:50+00:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>http://youtube.test/details/proses-finishing-alat-hadroh-yang-bikin-mengkilap</loc>
+		<priority>1.0</priority>
+		<lastmod>2021-01-12T04:33:55+00:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>http://youtube.test/details/kekuatan-alat-musik-rebana-sebagai-media-dakwah</loc>
+		<priority>1.0</priority>
+		<lastmod>2021-01-12T04:35:48+00:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>http://youtube.test/details/testimoni-lapakanik-produk-bass-ceper-sarang-tawon</loc>
+		<priority>1.0</priority>
+		<lastmod>2021-01-12T04:38:14+00:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>http://youtube.test/details/bukti-bahwa-produksi-lapakanik-rebana-terpercaya</loc>
+		<priority>1.0</priority>
+		<lastmod>2021-01-12T04:39:47+00:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>http://youtube.test/details/testimoni-suara-keprak-hadroh-produk-lapakanik-rebana</loc>
+		<priority>1.0</priority>
+		<lastmod>2021-01-12T04:41:12+00:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>http://youtube.test/details/testimoni-produk-lapakanik-fullset-hadroh-ukiran-terbaru</loc>
+		<priority>1.0</priority>
+		<lastmod>2021-01-12T04:50:00+00:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>http://youtube.test/details/testimoni-alat-hadroh-fullset-motif-marmer-keramik</loc>
+		<priority>1.0</priority>
+		<lastmod>2021-01-12T04:57:45+00:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>http://youtube.test/details/testimoni-terbaru-produk-lapakanik-kualitas-terjamin</loc>
+		<priority>1.0</priority>
+		<lastmod>2021-01-12T04:58:51+00:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>http://youtube.test/details/cek-suara-hadroh-hasil-produksi-lapakanik-nusantara</loc>
+		<priority>1.0</priority>
+		<lastmod>2021-01-12T05:00:28+00:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>http://youtube.test/details/unboxing-fullset-alat-hadroh-ukiran-pesanan-lombok-timur</loc>
+		<priority>1.0</priority>
+		<lastmod>2021-01-12T05:04:38+00:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>http://youtube.test/details/harga-1-set-hadroh-lengkap-termurah-produk-asli-jepara</loc>
+		<priority>1.0</priority>
+		<lastmod>2021-01-15T09:06:35+00:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>http://youtube.test/details/harga-1-set-hadroh-jepara-berkualitas-produk-lapakanik</loc>
+		<priority>1.0</priority>
+		<lastmod>2021-01-15T09:08:44+00:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>http://youtube.test/details/harga-bas-hadroh-habib-syech-versi-polos-mengkilap</loc>
+		<priority>1.0</priority>
+		<lastmod>2021-01-15T09:10:01+00:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>http://youtube.test/details/harga-bass-hadroh-termurah-versi-ukir-logo-dan-nama</loc>
+		<priority>1.0</priority>
+		<lastmod>2021-01-15T09:12:31+00:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>http://youtube.test/details/cek-suara-darbuka-cor-alumunium-motif-ukuran-834-inc</loc>
+		<priority>1.0</priority>
+		<lastmod>2021-01-15T09:15:37+00:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>http://youtube.test/details/cek-suara-rebana-hadroh-ukiran-produk-asli-jepara</loc>
+		<priority>1.0</priority>
+		<lastmod>2021-01-15T09:17:38+00:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>http://youtube.test/details/cek-suara-darbuka-kayu-qasidah-nadamtuhu-ala-shofa</loc>
+		<priority>1.0</priority>
+		<lastmod>2021-02-25T10:20:06+00:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>http://youtube.test/details/alat-musik-tradisional-rebana-hadroh-full-cek-suara</loc>
+		<priority>1.0</priority>
+		<lastmod>2021-01-15T09:23:46+00:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>http://youtube.test/details/pengrajin-rebana-jepara-versi-ukiran-nama-majelis-keren</loc>
+		<priority>1.0</priority>
+		<lastmod>2021-02-26T13:22:23+00:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>http://youtube.test/details/rebana-jepara-berkualitas-cek-suara-asli-di-produksi</loc>
+		<priority>1.0</priority>
+		<lastmod>2021-02-26T13:22:04+00:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>http://youtube.test/details/alat-hadroh-lengkap-versi-ukiran-tampilan-terbaru-2021</loc>
+		<priority>1.0</priority>
+		<lastmod>2021-03-15T10:42:12+00:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>http://youtube.test/details/alat-hadroh-jepara-fullset-ukir-versi-habib-syech-termurah</loc>
+		<priority>1.0</priority>
+		<lastmod>2021-03-15T06:07:03+00:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>http://youtube.test/details/alat-rebana-klasik-ukiran-tanpa-darbuka-keprak-tung</loc>
+		<priority>1.0</priority>
+		<lastmod>2021-01-16T04:30:37+00:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>http://youtube.test/details/alat-hadroh-1-set-lengkap-versi-polosan-terbang-isi-6</loc>
+		<priority>1.0</priority>
+		<lastmod>2021-01-16T04:32:04+00:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>http://youtube.test/details/alat-rebana-lengkap-versi-habib-syech-produk-lapakanik</loc>
+		<priority>1.0</priority>
+		<lastmod>2021-01-16T04:34:04+00:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>http://youtube.test/details/alat-rebana-hadroh-jepara-fullset-polos-gold-mengkilap</loc>
+		<priority>1.0</priority>
+		<lastmod>2021-01-16T04:35:37+00:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>http://youtube.test/details/majelis-al-munawwaroh-bandung-si-raja-gendang-hadroh</loc>
+		<priority>1.0</priority>
+		<lastmod>2021-01-18T09:24:56+00:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>http://youtube.test/details/majelis-talim-sholawat-ahbabul-anwar-indragiri-hulu-riau</loc>
+		<priority>1.0</priority>
+		<lastmod>2021-01-18T13:34:13+00:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>http://youtube.test/details/jual-bass-hadroh-jepara-ukir-nama-majelis-produk-lapakanik</loc>
+		<priority>1.0</priority>
+		<lastmod>2021-01-22T10:46:06+00:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>http://youtube.test/details/group-rebana-nur-sakinah-aceh</loc>
+		<priority>1.0</priority>
+		<lastmod>2021-03-15T09:05:46+00:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>http://youtube.test/details/penampilan-perdana-group-rebana-nur-sakinah</loc>
+		<priority>1.0</priority>
+		<lastmod>2021-03-21T16:57:57+00:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>http://youtube.test/details/majelis-al-musthofal-amin-pemangkih</loc>
+		<priority>1.0</priority>
+		<lastmod>2021-03-29T03:38:46+00:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>http://youtube.test/details/group-hadroh-m-qios-kedung-jepara</loc>
+		<priority>1.0</priority>
+		<lastmod>2021-04-07T14:32:38+00:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>http://youtube.test/details/zz</loc>
+		<priority>1.0</priority>
+		<lastmod>2021-04-07T14:33:37+00:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>http://youtube.test/details/tes-sitemap-apakahmasuk</loc>
+		<priority>1.0</priority>
+		<lastmod>2021-04-26T08:48:34+00:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
 </urlset>
+

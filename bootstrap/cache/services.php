@@ -30,21 +30,22 @@
     26 => 'Laravel\\Tinker\\TinkerServiceProvider',
     27 => 'Laravel\\Ui\\UiServiceProvider',
     28 => 'Laravelista\\Comments\\ServiceProvider',
-    29 => 'Maatwebsite\\Excel\\ExcelServiceProvider',
-    30 => 'Chatify\\ChatifyServiceProvider',
-    31 => 'Carbon\\Laravel\\ServiceProvider',
-    32 => 'NunoMaduro\\Collision\\Adapters\\Laravel\\CollisionServiceProvider',
-    33 => 'RealRashid\\SweetAlert\\SweetAlertServiceProvider',
-    34 => 'Sentry\\Laravel\\ServiceProvider',
-    35 => 'Sentry\\Laravel\\Tracing\\ServiceProvider',
-    36 => 'Spatie\\Honeypot\\HoneypotServiceProvider',
-    37 => 'Yajra\\DataTables\\DataTablesServiceProvider',
-    38 => 'RealRashid\\SweetAlert\\SweetAlertServiceProvider',
-    39 => 'Maatwebsite\\Excel\\ExcelServiceProvider',
-    40 => 'App\\Providers\\AppServiceProvider',
-    41 => 'App\\Providers\\AuthServiceProvider',
-    42 => 'App\\Providers\\EventServiceProvider',
-    43 => 'App\\Providers\\RouteServiceProvider',
+    29 => 'Laravelium\\Sitemap\\SitemapServiceProvider',
+    30 => 'Maatwebsite\\Excel\\ExcelServiceProvider',
+    31 => 'Chatify\\ChatifyServiceProvider',
+    32 => 'Carbon\\Laravel\\ServiceProvider',
+    33 => 'NunoMaduro\\Collision\\Adapters\\Laravel\\CollisionServiceProvider',
+    34 => 'RealRashid\\SweetAlert\\SweetAlertServiceProvider',
+    35 => 'Sentry\\Laravel\\ServiceProvider',
+    36 => 'Sentry\\Laravel\\Tracing\\ServiceProvider',
+    37 => 'Spatie\\Honeypot\\HoneypotServiceProvider',
+    38 => 'Yajra\\DataTables\\DataTablesServiceProvider',
+    39 => 'RealRashid\\SweetAlert\\SweetAlertServiceProvider',
+    40 => 'Maatwebsite\\Excel\\ExcelServiceProvider',
+    41 => 'App\\Providers\\AppServiceProvider',
+    42 => 'App\\Providers\\AuthServiceProvider',
+    43 => 'App\\Providers\\EventServiceProvider',
+    44 => 'App\\Providers\\RouteServiceProvider',
   ),
   'eager' => 
   array (
@@ -188,6 +189,8 @@
     'validator' => 'Illuminate\\Validation\\ValidationServiceProvider',
     'validation.presence' => 'Illuminate\\Validation\\ValidationServiceProvider',
     'command.tinker' => 'Laravel\\Tinker\\TinkerServiceProvider',
+    'sitemap' => 'Laravelium\\Sitemap\\SitemapServiceProvider',
+    'Laravelium\\Sitemap\\Sitemap' => 'Laravelium\\Sitemap\\SitemapServiceProvider',
   ),
   'when' => 
   array (
@@ -228,6 +231,9 @@
     array (
     ),
     'Laravel\\Tinker\\TinkerServiceProvider' => 
+    array (
+    ),
+    'Laravelium\\Sitemap\\SitemapServiceProvider' => 
     array (
     ),
   ),

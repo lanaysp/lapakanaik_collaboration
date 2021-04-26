@@ -1,7 +1,12 @@
 <?php
 
+use App\Category;
+use App\Product;
+use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\URL;
 
 /*
 |--------------------------------------------------------------------------
@@ -131,6 +136,34 @@ Route::prefix('admin')
         Route::resource('khutbahcategory','KhutbahcategoryController');
         Route::resource('khutbah','KhutbahController');
     });
+
+    Route::get('genrate-sitemap', function(){
+
+    // create new sitemap object
+    $sitemap = App::make("sitemap");
+
+    // add items to the sitemap (url, date, priority, freq)
+    $sitemap->add(URL::to('/'), '2012-08-25T20:10:00+02:00', '1.0', 'daily');
+    $sitemap->add(URL::to('details'), '2012-08-26T12:30:00+02:00', '0.9', 'monthly');
+
+    // get all posts from db
+    // $posts = DB::table('products')->orderBy('created_at', 'desc')->get();
+
+    $categories = Product::all();
+
+    // add every post to the sitemap
+    foreach ($categories as $category)
+    {
+        $sitemap->add(URL::to('details/'.$category->slug.''), $category->updated_at, '1.0', 'daily');
+    }
+
+    // generate your sitemap (format, filename)
+    $sitemap->store('xml', 'sitemap');
+    // this will generate file mysitemap.xml to your public folder
+
+    return redirect(url('sitemap.xml'));
+
+});
 
 // Auth::routes();
 

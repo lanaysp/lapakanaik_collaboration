@@ -55,6 +55,13 @@
       0 => 'Laravelista\\Comments\\ServiceProvider',
     ),
   ),
+  'laravelium/sitemap' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Laravelium\\Sitemap\\SitemapServiceProvider',
+    ),
+  ),
   'maatwebsite/excel' => 
   array (
     'providers' => 
