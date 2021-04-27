@@ -117,6 +117,8 @@ Route::prefix('member')
         // route hadroh
         Route::get('tutorial-hadroh/{id}', 'HadrohController@tutorial')->name('hadroh.tutor');
         Route::get('buy-hadroh', 'HadrohController@sell')->name('sell');
+        Route::get('about', 'DashboardController@about')->name('about');
+
 
     });
 

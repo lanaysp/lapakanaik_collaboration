@@ -44,7 +44,7 @@
                   <div class="col-md-4">
                     <a id="link" href="{{ route('alquran') }}">
                   <div class="card mb-2">
-                    <div class="card-body">
+                    <div class="card-body" id="dashboardhero">
                       <div class="dashboard-card-title">
 
                       </div>
@@ -59,7 +59,7 @@
                 <div class="col-md-4">
                  <a id="link" href="{{ route('doa') }}">
                     <div class="card mb-2">
-                        <div class="card-body">
+                        <div class="card-body" id="dashboardhero">
                             <div class="dashboard-card-title">
 
                             </div>
@@ -73,7 +73,7 @@
                 <div class="col-md-4">
                 <a href="{{ route('tahlil') }}" id="link">
                     <div class="card mb-2">
-                    <div class="card-body">
+                    <div class="card-body" id="dashboardhero">
                       <div class="dashboard-card-title">
 
                       </div>
@@ -89,7 +89,7 @@
                 <div class="col-md-4">
                  <a href="{{ route('wirid') }}" id="link">
                      <div class="card mb-2">
-                    <div class="card-body">
+                    <div class="card-body" id="dashboardhero">
                       <div class="dashboard-card-title">
 
                       </div>
@@ -103,7 +103,7 @@
                 <div class="col-md-4">
                   <a href="{{ route('khutbah') }}" id="link">
                     <div class="card mb-2">
-                    <div class="card-body">
+                    <div class="card-body" id="dashboardhero">
                       <div class="dashboard-card-title">
 
                       </div>
@@ -117,7 +117,7 @@
                 <div class="col-md-4">
                   <a href="{{ route('sell') }}" id="link">
                     <div class="card mb-2">
-                        <div class="card-body">
+                        <div class="card-body" id="dashboardhero">
                             <div class="dashboard-card-title">
                             </div>
                             <div class="dashboard-card-subtitle">

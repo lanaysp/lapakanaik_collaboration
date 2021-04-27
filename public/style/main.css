@@ -11950,6 +11950,8 @@ h5 {
 
 .card-list {
   margin-bottom: 10px;
+  box-shadow: 0 1rem 1.5rem rgb(0 0 0 / 15%);
+  color: #fff;
 }
 
 .card-list .card-body {
@@ -12212,4 +12214,13 @@ h5 {
   background-repeat: no-repeat;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
+}
+.card-body#dashboardhero {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  min-height: 1px;
+  padding: 1.25rem;
+  box-shadow: 0 1rem 1.5rem rgb(0 0 0 / 15%);
+  color: #fff;
 }

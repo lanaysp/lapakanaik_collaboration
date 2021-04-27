@@ -16,6 +16,9 @@
 #link {
             color : #FFB60C !important ;
         }
+#last-read {
+    border: .2rem solid #b71c1c;
+}
 </style>
 
 @endpush
@@ -87,9 +90,7 @@
                     </ul>
                 </div>
             @endif
-            {{-- @php
-                dd($data['data']['sequence']);
-            @endphp --}}
+
                  @foreach ($data['data'] as $item)
                     <a href="{{ route('detail-alquran', $item['number']) }}" class="card card-list d-block">
                     <div class="card-body">

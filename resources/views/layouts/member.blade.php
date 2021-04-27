@@ -81,6 +81,11 @@
               <hr style="border-top: 1px solid #ccc;">
 
             </a>
+            <a href="{{ route('about') }}" class="list-group-item list-group-item-action {{ (request()->is('member/about*')) ? 'active' : '' }}">
+               <i class="fas fa-info-circle"></i> Program Lapakanik
+              <hr style="border-top: 1px solid #ccc;">
+
+            </a>
 
             <a href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();" class="list-group-item list-group-item-action mb-5">
              <i class="fas fa-sign-out-alt"></i> Sign Out

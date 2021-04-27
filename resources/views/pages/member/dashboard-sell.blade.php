@@ -48,19 +48,19 @@
                     {{-- form --}}
                             <form class="whatsapp-form">
                                 <div class="row">
-                                    <div class="form-group col-4">
+                                    <div class="form-group col-lg-4 col-12">
                                         <label for="exampleInputEmail1">Nama</label>
                                         <input type="text" class="form-control validate" id="nama" value="{{ $user->name }}" required>
                                     </div>
-                                    <div class="form-group col-4">
+                                    <div class="form-group col-lg-4 col-12">
                                         <label for="exampleInputEmail1">Email</label>
                                         <input type="email" class="form-control validate" id="email" value="{{ $user->email }}" required>
                                     </div>
-                                    <div class="form-group col-4">
+                                    <div class="form-group col-lg-4 col-12">
                                         <label for="exampleInputEmail1">No Telp/Wa</label>
                                         <input type="number" class="form-control" id="hp" value="{{ $user->wa_majelis }}" required>
                                     </div>
-                                    <div class="form-group col-6">
+                                    <div class="form-group col-lg-6 col-12">
                                         <label for="exampleInputEmail1">Pesanan</label>
                                         <select name="paket" id="paket" class="form-control validate" required>
                                             <option hidden='hidden' selected='selected' value='default'>Pilih Paket</option>
@@ -68,7 +68,7 @@
                                             <option value="SATUAN">SATUAN</option>
                                         </select>
                                     </div>
-                                    <div class="form-group col-6">
+                                    <div class="form-group col-lg-6 col-12">
                                         <label for="exampleInputEmail1">Nama Produk</label>
                                         <select name="produk" id="produk" class="form-control validate" required>
                                             <option hidden='hidden' selected='selected' value='default'>Pilih Produk</option>
@@ -77,11 +77,14 @@
                                             <option value="QASIDAH LASQI">QASIDAH LASQI</option>
                                         </select>
                                     </div>
-                                    <div class="form-group col-6">
-                                        <label for="exampleInputEmail1">Request Warna</label>
-                                         <input type="color" name="color" id="color" class="form-control validate" required>
+                                    <div class="form-group col-lg-6 col-12">
+                                       <p>Pilih varian warna:</p>
+
+                                        <div>
+                                            <input type="color" name="color" id="color" value="#964B00">
+                                        </div>
                                     </div>
-                                 <div class="form-group col-6">
+                                 <div class="form-group col-lg-6 col-12">
                                         <label for="exampleInputEmail1">Model</label>
                                         <select name="model" id="model" class="form-control validate" required>
                                             <option hidden='hidden' selected='selected' value='default'>Pilih Model</option>

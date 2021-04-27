@@ -22,7 +22,7 @@ class DashboardController extends Controller
         if ($user->regencies_id == null) {
             $user = 'Jepara';
         }else{
-            $user = str_replace(['KABUPATEN','KOTA'],null, $user->kota->name);
+            $user = str_replace(['KABUPATEN','KOTA'],'', $user->kota->name);
 
         }
         $suspect = Http::get('https://api.fahmicog.site/muslim/jadwalshalat?kota='.$user.'&apikey=lanaysp');
@@ -32,6 +32,14 @@ class DashboardController extends Controller
             'customer' => $customer,
             'medsos' => $medsos,
             'user' => $user
+        ]);
+    }
+
+    public function about(){
+        $medsos = Sosial::all();
+
+        return view('pages.member.about',[
+            'medsos' => $medsos
         ]);
     }
 }

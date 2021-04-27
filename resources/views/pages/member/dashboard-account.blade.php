@@ -252,7 +252,7 @@ textarea::-webkit-input-placeholder {
                       />
                     </div>
                   </div>
-                  <div class="col-md-4 offset-2">
+                  <div class="col-md-4 offset-lg-2">
                     <div class="form-group">
                       <label for="tt">Username Tiktok</label>
                       <input
