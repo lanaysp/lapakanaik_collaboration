@@ -39,7 +39,7 @@ class IslamicController extends Controller
 
     public function tahlil()
     {
-        $suspects = Http::get('https://zahirr-web.herokuapp.com/api/muslim/tahlil?apikey=zahirgans');
+        $suspects = Http::get('https://islamic-api-indonesia.herokuapp.com/api/data/json/tahlil');
         $data = $suspects->json();
 
 
@@ -48,7 +48,7 @@ class IslamicController extends Controller
 
     public function wirid()
     {
-        $suspects = Http::get('https://zahirr-web.herokuapp.com/api/muslim/wirid?apikey=zahirgans');
+        $suspects = Http::get('https://islamic-api-indonesia.herokuapp.com/api/data/json/wirid');
         $data = $suspects->json();
 
 
@@ -57,7 +57,7 @@ class IslamicController extends Controller
 
     public function doa()
     {
-        $suspects = Http::get('https://fahmiapi.herokuapp.com/muslim/doaharian?apikey=lanaysp');
+        $suspects = Http::get('https://islamic-api-indonesia.herokuapp.com/api/data/json/doaharian');
         $data = $suspects->json();
 
 
