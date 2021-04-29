@@ -9,7 +9,10 @@
   <meta name="author" content="Lapakanik Nusantara">
   <meta name="google-site-verification" content="Pm2RRYZFQJJcpW5pDwDIxJEOGLRuII6F8kVz_RT58BQ" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="msvalidate.01" content="9AEB4786B8A6BD23CD2C8F8F7DF5FCF0" />
+  <meta name="msvalidate.01" content="9AEB4786B8A6BD23CD2C8F8F7DF5FCF0" />
+  <meta name="robots" content="nofollow">
+    <meta name="googlebot" content="noindex">
+
    <link rel="shortcut icon" href="/images/logo.png" />
     {{-- <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css"> --}}
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A==" crossorigin="anonymous" />

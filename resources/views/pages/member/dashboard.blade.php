@@ -9,6 +9,15 @@
         #link {
             color : #FFB60C !important ;
         }
+        .card-body#dashboardhero {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  min-height: 1px;
+  padding: 1.25rem;
+  box-shadow: 0 1rem 1.5rem rgb(0 0 0 / 15%);
+  color: #fff;
+}
     </style>
 @endpush
 
@@ -150,7 +159,7 @@
 
             <div class="d-none d-lg-block">
                     <a href="" class="card card-list d-block">
-                        <div class="card-body">
+                        <div class="card-body id="dashboardhero"">
                             <div class="row">
                                 <div class="col-md-2">
                                     Subuh
@@ -177,7 +186,7 @@
              @if ($item['jadwal']['tanggal'] == now()) --}}
 
                     <a href="" class="card card-list d-block">
-                    <div class="card-body">
+                    <div class="card-body id="dashboardhero"">
                         <div class="row">
                             <div class="col-md-2">
                                  {{ $data['result']['jadwal']['subuh'] }}
@@ -203,7 +212,7 @@
                 {{-- @endif --}}
             </div>
              <a href="" class="card card-list d-block d-sm-none">
-                    <div class="card-body">
+                    <div class="card-body id="dashboardhero"">
                         <div class="row">
                            <table>
                                <tr>

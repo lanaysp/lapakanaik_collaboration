@@ -79,10 +79,7 @@
                                     </div>
                                     <div class="form-group col-lg-6 col-12">
                                        <p>Pilih varian warna:</p>
-
-                                        <div>
-                                            <input type="color" name="color" id="color" value="#964B00">
-                                        </div>
+                                            <input type="color" id="color" name="color" value="#ee0000" list />
                                     </div>
                                  <div class="form-group col-lg-6 col-12">
                                         <label for="exampleInputEmail1">Model</label>
