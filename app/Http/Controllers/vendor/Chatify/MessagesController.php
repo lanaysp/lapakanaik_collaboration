@@ -35,7 +35,7 @@ class MessagesController extends Controller
         // check if user authorized
         if (Auth::check()) {
             return Chatify::pusherAuth(
-                $request['channel_name'],
+                $request['nama_majelis'],
                 $request['socket_id'],
                 $authData
             );
@@ -107,7 +107,7 @@ class MessagesController extends Controller
         if (file_exists($path)) {
             return Response::download($path, $fileName);
         } else {
-            return abort(404, "Sorry, File does not exist in our server or may have been deleted!");
+            return abort(404, "Maaf, File tidak ada di server kami atau mungkin telah dihapus!");
         }
     }
 
@@ -139,10 +139,10 @@ class MessagesController extends Controller
                     $attachment = Str::uuid() . "." . $file->getClientOriginalExtension();
                     $file->storeAs("public/" . config('chatify.attachments.folder'), $attachment);
                 } else {
-                    $error_msg = "File extension not allowed!";
+                    $error_msg = "Ekstensi file tidak diperbolehkan!";
                 }
             } else {
-                $error_msg = "File size is too long!";
+                $error_msg = "Ukuran file terlalu besar!";
             }
         }
 

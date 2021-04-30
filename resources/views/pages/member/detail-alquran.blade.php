@@ -9,6 +9,7 @@
 @push('addon-style')
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous">
 <link rel='stylesheet' charset='utf-8'>
 <style>
     .card {
@@ -19,11 +20,11 @@
 #link {
             color : #FFB60C !important ;
         }
+
 .fa-bookmark:before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
     content: "\f02e";
-}
-.fa-bookmark:after {
-    content: ""
 }
 </style>
 
@@ -113,8 +114,12 @@
                         @foreach ($data['data']['verses'] as $item )
                         <div class="row">
                             <div class="col-12">
+                                <audio controls>
+                                    {{-- <source src="horse.ogg" type="audio/ogg"> --}}
+                                    <source src="{{ $item['audio']['primary'] }}" type="audio/mpeg">
+                                </audio>
                                 <h3 class="text-right mt-3 ">{{ $item['text']['arab'] }} ~  {{ arabic_w2e($no++) }}
-                                    {{-- <span class="last-read far fa-bookmark ml-2" style="font-size: 1.8rem; cursor: pointer;"> </span> --}}
+                                    {{-- <span class="last-read ml-2 fa-bookmark" style="font-size: 1.8rem; cursor: pointer;"> </span> --}}
                                 </h3>
                         <h6 class="text-left mt-2">{{ $item['translation']['id'] }}</h6>
                             </div>
@@ -123,7 +128,6 @@
 
                </div>
            </div>
-
         </div>
       </div>
     </div>

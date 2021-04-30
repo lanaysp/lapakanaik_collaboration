@@ -51,6 +51,7 @@
             </a>
             <a href="{{ route('chatify') }}" class="list-group-item list-group-item-action" target="_blank">
                <i class="fas fa-comments"></i></i> Support
+               {{-- <span class="badge badge-pill badge-success">8</span> --}}
             </a>
             <a href="{{ route('supports.index') }}" class="list-group-item list-group-item-action {{ (request()->is('member/supports')) ? 'active' : '' }}">
                <i class="fas fa-box-open"></i> Kotak Saran
@@ -111,8 +112,9 @@
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                  <!-- Desktop Menu -->
                   {{-- {!! $unseenCounter > 0 ? "<b>".$unseenCounter."</b>" : '' !!} --}}
-                <ul class="navbar-nav d-none d-flex ml-auto mr-5">
-                  <li class="nav-item dropdown">
+                  <ul class="navbar-nav d-none d-flex ml-auto">
+                    <i class="far fa-bell mr-3 mt-2"></i>
+                    <li class="nav-item dropdown">
                     <a
                       href="#"
                       class="nav-link text-uppercase"
@@ -120,6 +122,7 @@
                       role="button"
                       data-toggle="dropdown"
                     >
+
                       {{-- <img
                         src="/images/users/user.svg"
                         alt=""

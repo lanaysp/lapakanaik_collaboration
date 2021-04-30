@@ -39,7 +39,7 @@
             {{-- Last Message user indicator --}}
             {!!
                 $lastMessage->from_id == Auth::user()->id
-                ? '<span class="lastMessageIndicator">You :</span>'
+                ? '<span class="lastMessageIndicator">Pesan :</span>'
                 : ''
             !!}
             {{-- Last message body --}}
@@ -54,6 +54,7 @@
             @endif
         </span>
         {{-- New messages counter --}}
+
             {!! $unseenCounter > 0 ? "<b>".$unseenCounter."</b>" : '' !!}
         </td>
 
